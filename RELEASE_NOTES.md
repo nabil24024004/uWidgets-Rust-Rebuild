@@ -10,8 +10,8 @@
 | :--- | :---: | :--- | :--- |
 | **`uWidgets-Rust-v1.0.0-Setup.exe`** | **2.31 MB** | Recommended Windows Setup Wizard (no Admin UAC required, shortcuts, startup toggle, Add/Remove Programs uninstaller) | `3b8a33715378ce46036d4ff85f616dd472a1c8b35228963645f0262eaab1339e` |
 | **`uWidgets-Rust-v1.0.0-Portable.exe`** | **3.50 MB** | Standalone single-file portable executable — drop anywhere and run | `81342cdb06a4f718a80ca01ffd79c9693d68f1ef7ea220ed1315473ea96ea39f` |
-| **`uWidgets-Rust-v1.0.0-x64-Store.msix`** | **1.98 MB** | Microsoft Store Partner Center upload package (`NeoSparkX.uWidgets`, Store ID `9NDGKTPBF48G`) | `68ba333e2fa455ee8a746f87d5deeeaffec8877b7e92393f35d1bbd9c675e1e3` |
-| **`uWidgets-Rust-v1.0.0-x64-Sideload.msix`** | **1.98 MB** | Signed MSIX package for local Windows 10/11 sideloading (pair with `uWidgets-TestCert.cer`) | `434d6ec29b6654ec8ae26c2e67cf796920fd6830c296913a3035e64da61281bb` |
+| **`uWidgets-Rust-v1.0.0-x64-Store.msix`** | **1.98 MB** | Microsoft Store Partner Center upload package (`NeoSparkX.uWidgets`, Store ID `9NDGKTPBF48G`) | `586fb4181069e1a4a5a1f97cb92d7b36cee923b3bc17ebca16c9a11805baaeac` |
+| **`uWidgets-Rust-v1.0.0-x64-Sideload.msix`** | **1.98 MB** | Signed MSIX package for local Windows 10/11 sideloading (pair with `uWidgets-TestCert.cer`) | `65eced5f3de864b8f49d37b7ac32daf6b937e570eb3a673bbefd6a2e0dbd447b` |
 
 ---
 

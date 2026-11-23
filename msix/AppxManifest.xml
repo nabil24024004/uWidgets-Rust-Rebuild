@@ -14,7 +14,7 @@
     ProcessorArchitecture="x64" />
 
   <Properties>
-    <DisplayName>uWidgets (Rust Edition)</DisplayName>
+    <DisplayName>uWidgets</DisplayName>
     <PublisherDisplayName>NeoSparkX</PublisherDisplayName>
     <Description>Ultra-lightweight Liquid Glass desktop widgets for Windows built in pure Rust, Direct2D, and DirectComposition.</Description>
     <Logo>Assets\StoreLogo.png</Logo>
@@ -34,7 +34,7 @@
       Executable="uwidgets-rs.exe"
       EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements
-        DisplayName="uWidgets (Rust Edition)"
+        DisplayName="uWidgets"
         Description="Ultra-lightweight Liquid Glass desktop widgets for Windows"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
@@ -53,7 +53,7 @@
           <desktop:StartupTask
             TaskId="uWidgetsStartupTask"
             Enabled="false"
-            DisplayName="uWidgets (Rust Edition)" />
+            DisplayName="uWidgets" />
         </desktop:Extension>
       </Extensions>
     </Application>
