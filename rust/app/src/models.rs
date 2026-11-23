@@ -20,6 +20,43 @@ pub struct AppSettings {
     pub liquid_glass: LiquidGlassConfig,
     #[serde(default)]
     pub weather: WeatherConfig,
+    #[serde(default)]
+    pub updates: UpdateConfig,
+}
+
+fn default_neosparkx_manifest_url() -> String {
+    "https://neosparkx.com/releases/uwidgets/latest.json".to_string()
+}
+fn default_store_product_id() -> Option<String> {
+    Some("9NDGKTPBF48G".to_string())
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "PascalCase")]
+pub struct UpdateConfig {
+    /// Automatically check for updates on launch & periodically in the background.
+    #[serde(default = "default_true")]
+    pub auto_check: bool,
+    /// Automatically download and install updates (Microsoft Store silent update or self-update).
+    #[serde(default = "default_true")]
+    pub auto_install: bool,
+    /// NeosparkX website JSON release manifest URL (checked alongside GitHub Releases).
+    #[serde(default = "default_neosparkx_manifest_url")]
+    pub neosparkx_manifest_url: String,
+    /// Microsoft Store 12-char Product ID (`9NDGKTPBF48G`) for Store deep-links.
+    #[serde(default = "default_store_product_id")]
+    pub store_product_id: Option<String>,
+}
+
+impl Default for UpdateConfig {
+    fn default() -> Self {
+        Self {
+            auto_check: true,
+            auto_install: true,
+            neosparkx_manifest_url: default_neosparkx_manifest_url(),
+            store_product_id: default_store_product_id(),
+        }
+    }
 }
 
 fn default_weather_city() -> String {
@@ -228,6 +265,7 @@ impl Default for AppSettings {
             ignore_update: None,
             liquid_glass: LiquidGlassConfig::default(),
             weather: WeatherConfig::default(),
+            updates: UpdateConfig::default(),
         }
     }
 }
@@ -429,6 +467,16 @@ impl WidgetLayout {
 }
 
 pub fn config_dir() -> PathBuf {
+    // Inside a Microsoft Store / MSIX package, the executable folder (WindowsApps) is read-only!
+    // Store all mutable settings, layout, and weather cache cleanly under %LOCALAPPDATA%\uWidgets.
+    if crate::updater::is_packaged_msix()
+        && let Ok(local) = std::env::var("LOCALAPPDATA")
+    {
+        let dir = PathBuf::from(local).join("uWidgets");
+        let _ = fs::create_dir_all(&dir);
+        return dir;
+    }
+
     // Prefer executable directory if appSettings.json exists there, otherwise current dir, otherwise exe dir.
     if let Ok(exe) = std::env::current_exe()
         && let Some(dir) = exe.parent()

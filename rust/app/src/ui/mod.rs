@@ -25,9 +25,12 @@ use crate::platform::system::{
     MonitorCollector, WinTimeZone, get_windows_accent_color, get_windows_dark_mode,
     load_system_timezones,
 };
+use crate::updater::{
+    ApplyResult, InstallChannel, UpdateCheckOutcome, UpdateInfo, apply_update_sync,
+    check_for_updates, detect_install_channel,
+};
 use crate::weather_client::{
-    GeoCity, WeatherService, check_latest_github_version, detect_current_location_sync,
-    search_cities_sync,
+    GeoCity, WeatherService, detect_current_location_sync, search_cities_sync,
 };
 
 pub const APP_VERSION: &str = "1.0.0";
@@ -38,6 +41,7 @@ pub const WM_APP_WEATHER_READY: u32 = WM_APP + 3;
 pub const WM_APP_CITY_RESULTS: u32 = WM_APP + 4;
 pub const WM_APP_UPDATE_RESULT: u32 = WM_APP + 5;
 pub const WM_APP_DETECT_LOCATION: u32 = WM_APP + 6;
+pub const WM_APP_UPDATE_APPLIED: u32 = WM_APP + 7;
 
 pub const TIMER_100MS: usize = 101;
 pub const TIMER_1S: usize = 102;
@@ -52,7 +56,7 @@ pub enum AppCommand {
     CloseSettings,
     OpenEditWidget(u64),
     CloseEditWidget,
-    OpenUpdatePopup(String),
+    OpenUpdatePopup(UpdateInfo),
     CloseUpdatePopup,
     SpawnWidget {
         widget_type: String,
@@ -68,6 +72,8 @@ pub enum AppCommand {
     ApplySettingsBroadcast,
     ReloadAllWidgets,
     CheckForUpdatesManual,
+    CheckForUpdatesAuto,
+    InstallPendingUpdate(UpdateInfo),
     SearchWeatherCities(String),
     DetectWeatherLocation,
     RefreshWeatherNow,
@@ -94,6 +100,9 @@ pub struct AppState {
     pub next_id: u64,
     pub language_changed: bool,
     pub update_status: Option<String>,
+    pub pending_update: Option<UpdateInfo>,
+    pub install_channel: InstallChannel,
+    pub update_hours_elapsed: u32,
     timer_100ms_active: bool,
     timer_1s_active: bool,
 }
@@ -206,6 +215,9 @@ impl AppState {
             next_id,
             language_changed: false,
             update_status: None,
+            pending_update: None,
+            install_channel: detect_install_channel(),
+            update_hours_elapsed: 0,
             timer_100ms_active: false,
             timer_1s_active: false,
         }
@@ -401,8 +413,8 @@ fn handle_command(app: &Rc<RefCell<AppState>>, cmd: AppCommand) {
                 }
             }
         }
-        AppCommand::OpenUpdatePopup(tag) => {
-            update_popup::open_popup(app, tag);
+        AppCommand::OpenUpdatePopup(info) => {
+            update_popup::open_popup(app, info);
         }
         AppCommand::CloseUpdatePopup => {
             let hwnd = {
@@ -591,26 +603,62 @@ fn handle_command(app: &Rc<RefCell<AppState>>, cmd: AppCommand) {
             st.sync_adaptive_timers();
             st.trigger_weather_refresh(true);
         }
-        AppCommand::CheckForUpdatesManual => {
-            let (ignore, hwnd_raw) = {
+        AppCommand::CheckForUpdatesManual | AppCommand::CheckForUpdatesAuto => {
+            let manual = matches!(cmd, AppCommand::CheckForUpdatesManual);
+            let (cfg, ignore, hwnd_raw) = {
                 let mut st = app.borrow_mut();
-                st.update_status = Some("Checking for updates…".to_string());
-                if let Some(sw) = &st.settings_win {
-                    sw.invalidate();
+                if manual {
+                    st.update_status = Some(match st.install_channel {
+                        InstallChannel::MicrosoftStore => {
+                            "Checking Microsoft Store for updates…".to_string()
+                        }
+                        _ => "Checking GitHub Releases & NeosparkX…".to_string(),
+                    });
+                    if let Some(sw) = &st.settings_win {
+                        sw.invalidate();
+                    }
                 }
-                (st.settings.ignore_update.clone(), st.msg_hwnd.0 as isize)
+                (
+                    st.settings.updates.clone(),
+                    st.settings.ignore_update.clone(),
+                    st.msg_hwnd.0 as isize,
+                )
             };
-            let app_clone_ptr = hwnd_raw;
+            let allow_auto = !manual && cfg.auto_install;
             std::thread::spawn(move || {
-                let tag = check_latest_github_version(APP_VERSION, ignore.as_deref());
-                // Store result via a safe channel or static mutex? Let's pass through a global mutex.
+                let outcome =
+                    check_for_updates(APP_VERSION, &cfg, ignore.as_deref(), allow_auto, manual);
                 if let Ok(mut guard) = UPDATE_RESULT_SLOT.lock() {
-                    *guard = Some(tag);
+                    *guard = Some((outcome, manual));
                 }
                 unsafe {
                     let _ = PostMessageW(
-                        HWND(app_clone_ptr as *mut _),
+                        HWND(hwnd_raw as *mut _),
                         WM_APP_UPDATE_RESULT,
+                        WPARAM(0),
+                        LPARAM(0),
+                    );
+                }
+            });
+        }
+        AppCommand::InstallPendingUpdate(info) => {
+            let (channel, hwnd_raw) = {
+                let mut st = app.borrow_mut();
+                st.update_status = Some(format!("Downloading & installing v{}…", info.version));
+                if let Some(sw) = &st.settings_win {
+                    sw.invalidate();
+                }
+                (st.install_channel, st.msg_hwnd.0 as isize)
+            };
+            std::thread::spawn(move || {
+                let res = apply_update_sync(&info, channel);
+                if let Ok(mut guard) = UPDATE_APPLY_SLOT.lock() {
+                    *guard = Some(res);
+                }
+                unsafe {
+                    let _ = PostMessageW(
+                        HWND(hwnd_raw as *mut _),
+                        WM_APP_UPDATE_APPLIED,
                         WPARAM(0),
                         LPARAM(0),
                     );
@@ -681,5 +729,7 @@ pub static CITY_SEARCH_SLOT: std::sync::Mutex<Option<Result<Vec<GeoCity>, String
     std::sync::Mutex::new(None);
 pub static DETECT_LOC_SLOT: std::sync::Mutex<Option<Result<GeoCity, String>>> =
     std::sync::Mutex::new(None);
-pub static UPDATE_RESULT_SLOT: std::sync::Mutex<Option<Option<String>>> =
+pub static UPDATE_RESULT_SLOT: std::sync::Mutex<Option<(UpdateCheckOutcome, bool)>> =
+    std::sync::Mutex::new(None);
+pub static UPDATE_APPLY_SLOT: std::sync::Mutex<Option<Result<ApplyResult, String>>> =
     std::sync::Mutex::new(None);

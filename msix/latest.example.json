@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "setup_url": "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/download/v1.0.0/uWidgets-Rust-v1.0.0-Setup.exe",
+  "portable_url": "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/download/v1.0.0/uWidgets-Rust-v1.0.0-Portable.exe",
+  "msix_url": "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/download/v1.0.0/uWidgets-Rust-v1.0.0-x64-Sideload.msix",
+  "release_page": "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/tag/v1.0.0",
+  "sha256_setup": "3b8a33715378ce46036d4ff85f616dd472a1c8b35228963645f0262eaab1339e",
+  "sha256_portable": "81342cdb06a4f718a80ca01ffd79c9693d68f1ef7ea220ed1315473ea96ea39f",
+  "store_product_id": "9NDGKTPBF48G",
+  "notes": "Initial v1.0.0 release with real-time SDF Liquid Glass, Weather tab, 4 Liquid Glass clocks, dual-channel auto-updater, native Setup EXE, and Microsoft Store MSIX build."
+}

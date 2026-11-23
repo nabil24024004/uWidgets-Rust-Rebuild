@@ -2,7 +2,7 @@
 
 <img src="docs/images/icon.png" alt="uWidgets Rust Edition Logo" width="112" height="112" />
 
-# uWidgets — Rust Edition
+# uWidgets | Rust Edition
 
 ### Ultra-Lightweight, Real-Time Liquid Glass Desktop Widgets for Windows 10 & 11
 
@@ -14,14 +14,26 @@
 [![Memory](https://img.shields.io/badge/Private_RAM-~23_MB-3B82F6?style=for-the-badge)](#performance-benchmarks)
 [![Parity](https://img.shields.io/badge/Parity_Verified-6%2C400%20%2F%206%2C400-F59E0B?style=for-the-badge)](#parity-verification)
 
-**A ground-up native Win32 + Direct2D + DirectComposition rewrite of [uWidgets](https://github.com/creewick/uWidgets) in pure Rust** — featuring an Apple iOS 26–inspired **SDF Liquid Glass optical engine**, **5.5× lower RAM usage**, **18× smaller disk footprint**, **zero .NET/Avalonia runtime overhead**, **instant disk-cached Weather**, and a **2.28 MB native Windows Setup Installer**.
+**A ground-up native Win32 + Direct2D + DirectComposition rewrite of [uWidgets](https://github.com/creewick/uWidgets) in pure Rust** — featuring an Apple iOS 26–inspired **SDF Liquid Glass optical engine**, **5.5× lower RAM usage**, **18× smaller disk footprint**, **zero .NET/Avalonia runtime overhead**, **instant disk-cached Weather**, **dual-channel automatic updates**, and native **MSIX + Setup EXE** builds.
+
+<br />
+
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9NDGKTPBF48G" target="_blank">
+    <img src="docs/images/cta-microsoft-store.svg" alt="Download from the Microsoft Store" height="60" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest" target="_blank">
+    <img src="docs/images/cta-desktop-setup.svg" alt="Download for Desktop Setup (v1.0.0)" height="60" />
+  </a>
+</p>
 
 <p>
-  <a href="https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest"><strong>⬇️ Download v1.0.0 Setup</strong></a> ·
   <a href="RELEASE_NOTES.md"><strong>📋 Release Notes</strong></a> ·
   <a href="#liquid-glass-optical-engine"><strong>✨ Liquid Glass</strong></a> ·
   <a href="#widget-catalog"><strong>🧩 16 Widgets</strong></a> ·
   <a href="#weather-customization"><strong>🌤️ Weather Tab</strong></a> ·
+  <a href="#automatic-updates"><strong>🔄 Auto-Updater</strong></a> ·
   <a href="#quick-start"><strong>🛠️ Build from Source</strong></a>
 </p>
 
@@ -154,12 +166,36 @@ The dedicated **Settings → Weather** tab solves slow startup and gives you com
 
 ---
 
+## Automatic Updates
+
+**uWidgets-rs** detects its installation channel automatically via Windows AppModel (`GetCurrentPackageFullName`) and keeps itself up to date with zero friction:
+
+| Install Channel | Detection | Update Source & Behavior |
+| :--- | :--- | :--- |
+| **Microsoft Store (MSIX)** | Native MSIX package identity (`NeoSparkX.uWidgets`, Store ID `9NDGKTPBF48G`) | Queries `Windows.Services.Store.StoreContext` and applies updates silently via `TrySilentDownloadAndInstallStorePackageUpdatesAsync` (with Store deep-link & App Installer fallback for sideloaded MSIX). |
+| **Desktop Setup / Portable** | Unpackaged Win32 binary | Checks **both** **GitHub Releases** and the **NeosparkX Release Manifest** (`neosparkx.com/releases/uwidgets/latest.json`) using SemVer comparison, verifies PE header + SHA-256 checksum, self-updates in place, and relaunches cleanly. |
+
+Toggle automatic updates or trigger a manual check anytime under **Settings → About → Updates & Distribution**.
+
+---
+
 ## Quick Start
 
 ### Quick Install (Windows 10 / 11 x64)
 
-1. Download **`uWidgets-Rust-v1.0.0-Setup.exe`** (`2.28 MB`) from the **[Latest GitHub Release](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest)** (or grab the standalone portable `.exe`).
-2. Run the native Setup Wizard — installs cleanly to `%LOCALAPPDATA%\uWidgets` with **zero Admin UAC prompt**, creates shortcuts, and registers clean uninstallation in Windows Installed Apps.
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9NDGKTPBF48G" target="_blank">
+    <img src="docs/images/cta-microsoft-store.svg" alt="Download from the Microsoft Store" height="58" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest" target="_blank">
+    <img src="docs/images/cta-desktop-setup.svg" alt="Download for Desktop Setup (v1.0.0)" height="58" />
+  </a>
+</p>
+
+- **Microsoft Store (`9NDGKTPBF48G`)**: 1-click sandboxed MSIX install with automatic silent Microsoft Store updates and native Windows Startup integration.
+- **Desktop Setup (`uWidgets-Rust-v1.0.0-Setup.exe`)**: Ultra-compact `~2.3 MB` native Win32 Setup Wizard — installs cleanly to `%LOCALAPPDATA%\uWidgets` with **zero Admin UAC prompt**, Start Menu & Desktop shortcuts, Windows Installed Apps uninstaller, and automatic GitHub/NeosparkX self-updates.
+- **Portable (`uWidgets-Rust-v1.0.0-Portable.exe`)**: Standalone single-file executable — drop anywhere and run.
 
 <div align="center">
   <img src="docs/images/setup-wizard.png" alt="uWidgets v1.0.0 Native Windows Setup Wizard" width="460" />
@@ -170,23 +206,27 @@ The dedicated **Settings → Weather** tab solves slow startup and gives you com
 #### Prerequisites
 - **Windows 10 (1903+) or Windows 11** (x64)
 - **[Rust Toolchain](https://rustup.rs/)** (Edition 2024 / `rustc 1.85+`, MSVC target `x86_64-pc-windows-msvc`)
-- **Windows 10/11 SDK** (provides `rc.exe` for embedding the native `.ico` icon & PE version metadata)
+- **Windows 10/11 SDK** (provides `rc.exe`, `makeappx.exe`, and `signtool.exe`)
 
 ```powershell
 # 1. Clone the repository
 git clone https://github.com/nabil24024004/uWidgets-Rust-Rebuild.git
 cd uWidgets-Rust-Rebuild
 
-# 2. Build the standalone optimized v1.0.0 app executable (~3.44 MB)
+# 2. Build the standalone optimized v1.0.0 app executable
 cd rust/app
 cargo build --release
 
-# 3. (Optional) Build the compressed 2.28 MB native Windows Setup Installer
+# 3. (Optional) Build the native Windows Setup Installer EXE
 cd ../setup
 cargo build --release
 
-# 4. Run directly (pass --settings to open the Settings window immediately)
-..\app\target\release\uwidgets-rs.exe --settings
+# 4. (Optional) Build Microsoft Store & Sideload MSIX packages
+cd ../..
+powershell -ExecutionPolicy Bypass -File scripts/build-msix.ps1 -Version 1.0.0
+
+# 5. Run directly (pass --settings to open the Settings window immediately)
+.\rust\app\target\release\uwidgets-rs.exe --settings
 ```
 
 > **Tip:** Right-click the **uWidgets** icon in your Windows System Tray at any time to open **Settings**, reload widgets, or exit. You can also right-click any desktop widget to **Edit**, **Resize** (preset grid sizes), or **Remove** it.
@@ -224,7 +264,9 @@ uWidgets in Rust/
 │   ├── fonts/                 # Bundled Inter font files
 │   ├── locales.json           # 12-language localization bundle
 │   └── uWidgets.ico           # Multi-resolution (16–256px) app icon
-├── docs/images/               # README showcase screenshots
+├── docs/images/               # README showcase screenshots & download CTA badges
+├── msix/                      # Microsoft Store AppxManifest.xml, .appinstaller & manifest template
+├── scripts/build-msix.ps1     # Automated Store + Sideload MSIX packaging & signing script
 ├── reference-oracle/          # .NET 8 parity reference oracle used during verification
 ├── rust/
 │   ├── app/                   # Native Win32 + Direct2D + DirectComposition app (v1.0.0)
@@ -232,6 +274,7 @@ uWidgets in Rust/
 │   │   └── src/
 │   │       ├── main.rs        # Win32 host message loop, adaptive timers & IPC
 │   │       ├── models.rs      # PascalCase appSettings.json & layout.json schemas
+│   │       ├── updater.rs     # Dual-channel Microsoft Store + GitHub/NeosparkX auto-updater
 │   │       ├── weather_client.rs # Disk-cached Open-Meteo + IP auto-detect client
 │   │       ├── platform/      # Direct2D graphics, SDF Liquid Glass engine, Win32 APIs
 │   │       ├── ui/            # Settings, Widget cards, Edit dialog, Tray, Update popup

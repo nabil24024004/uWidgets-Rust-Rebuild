@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="266" height="72" viewBox="0 0 266 72" role="img" aria-label="Download for Desktop Setup (v1.0.0)">
+  <defs>
+    <linearGradient id="winBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E86FF"/>
+      <stop offset="100%" stop-color="#0066D6"/>
+    </linearGradient>
+    <linearGradient id="rimGloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#70BEFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0052B4" stop-opacity="0.45"/>
+    </linearGradient>
+    <filter id="pillGlow" x="-4%" y="-8%" width="108%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0066D6" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <!-- Sleek blue pill button matching reference CTA -->
+  <rect x="2" y="2" width="262" height="68" rx="22" ry="22" fill="url(#winBlue)" stroke="url(#rimGloss)" stroke-width="1.4" filter="url(#pillGlow)"/>
+  <!-- Subtle top specular highlight -->
+  <rect x="4" y="4" width="258" height="28" rx="19" ry="19" fill="#FFFFFF" opacity="0.08"/>
+  <!-- Crisp white Windows 11 4-pane logo -->
+  <rect x="24" y="21" width="13.5" height="13.5" rx="1.4" fill="#FFFFFF"/>
+  <rect x="39.5" y="21" width="13.5" height="13.5" rx="1.4" fill="#FFFFFF"/>
+  <rect x="24" y="36.5" width="13.5" height="13.5" rx="1.4" fill="#FFFFFF"/>
+  <rect x="39.5" y="36.5" width="13.5" height="13.5" rx="1.4" fill="#FFFFFF"/>
+  <!-- Two-line CTA text -->
+  <text x="67" y="29" fill="#E0F0FF" font-family="'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.4">DOWNLOAD FOR</text>
+  <text x="66.5" y="51" fill="#FFFFFF" font-family="'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="18.5" font-weight="700" letter-spacing="-0.25">Desktop Setup (v1.0.0)</text>
+</svg>

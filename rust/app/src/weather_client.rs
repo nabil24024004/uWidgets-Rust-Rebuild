@@ -473,29 +473,3 @@ pub fn detect_current_location_sync() -> Result<GeoCity, String> {
     }
     Err("Could not detect current location".to_string())
 }
-
-pub fn check_latest_github_version(
-    current_version: &str,
-    ignore_update: Option<&str>,
-) -> Option<String> {
-    let agent = build_fast_agent();
-    let resp = agent
-        .get("https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest")
-        .call()
-        .ok()?;
-    let final_url = resp.get_url().to_string();
-    let tag = final_url
-        .rsplit('/')
-        .next()?
-        .trim_start_matches('v')
-        .to_string();
-    if tag.is_empty() || tag == current_version {
-        return None;
-    }
-    if let Some(ignored) = ignore_update
-        && ignored == tag
-    {
-        return None;
-    }
-    Some(tag)
-}

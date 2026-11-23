@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72" role="img" aria-label="Download from the Microsoft Store">
+  <defs>
+    <linearGradient id="bagGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2792F5"/>
+      <stop offset="100%" stop-color="#0E5DB8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-6%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <!-- Crisp white rounded Microsoft Store card -->
+  <rect x="2" y="2" width="236" height="68" rx="10" ry="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <!-- Shopping bag handle -->
+  <path d="M28.5 23.5 C28.5 16.5, 41.5 16.5, 41.5 23.5" fill="none" stroke="#1B75D0" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Shopping bag body -->
+  <rect x="17" y="22.5" width="36" height="31" rx="5.5" ry="5.5" fill="url(#bagGrad)"/>
+  <!-- Bag rim accent -->
+  <rect x="17" y="22.5" width="36" height="4.5" rx="2" fill="#4BA8FF" opacity="0.55"/>
+  <!-- 4-color Windows tile logo inside bag -->
+  <rect x="26.5" y="30.5" width="7.6" height="7.6" rx="0.8" fill="#F25022"/>
+  <rect x="35.9" y="30.5" width="7.6" height="7.6" rx="0.8" fill="#7FBA00"/>
+  <rect x="26.5" y="39.9" width="7.6" height="7.6" rx="0.8" fill="#00A4EF"/>
+  <rect x="35.9" y="39.9" width="7.6" height="7.6" rx="0.8" fill="#FFB900"/>
+  <!-- Typography matching official Microsoft Store badge -->
+  <text x="64" y="29" fill="#202020" font-family="'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="14.5" font-weight="400" letter-spacing="-0.1">Download from the</text>
+  <text x="63.5" y="52.5" fill="#111111" font-family="'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4">Microsoft Store</text>
+</svg>

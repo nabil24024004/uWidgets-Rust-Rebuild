@@ -136,6 +136,8 @@ enum UiAction {
     },
     OpenUrl(&'static str),
     CheckUpdates,
+    ToggleAutoUpdate,
+    InstallUpdateNow,
 }
 
 #[derive(Debug, Clone)]
@@ -622,6 +624,8 @@ fn paint_settings(st: &mut AppState) {
     let sys_accent = st.system_accent;
     let lang_changed = st.language_changed;
     let update_status = st.update_status.clone();
+    let pending_update = st.pending_update.clone();
+    let install_channel = st.install_channel;
 
     let AppState {
         settings_win,
@@ -2599,25 +2603,103 @@ fn paint_settings(st: &mut AppState) {
             });
             cy += 64.0;
 
-            let upd_card = rect(content_x, cy, content_x + content_w, cy + 62.0);
-            let upd_sub = update_status
-                .as_deref()
-                .unwrap_or("Manual check against upstream GitHub releases");
+            // Updates & Distribution Section
+            draw_section_label(
+                sw,
+                &pal,
+                content_x,
+                cy,
+                content_w,
+                "Updates & Distribution",
+                &font,
+            );
+            cy += 28.0;
+
+            let chan_card = rect(content_x, cy, content_x + content_w, cy + 62.0);
+            let chan_sub = match install_channel {
+                crate::updater::InstallChannel::MicrosoftStore => {
+                    "Updates automatically via Microsoft Store package service"
+                }
+                _ => "Checks GitHub Releases & neosparkx.com for new builds",
+            };
+            draw_settings_card_pad(
+                sw,
+                &pal,
+                chan_card,
+                &format!("Channel: {}", install_channel.display_name()),
+                chan_sub,
+                &font,
+                24.0,
+            );
+            cy += 70.0;
+
+            let auto_upd_card = rect(content_x, cy, content_x + content_w, cy + 62.0);
             draw_settings_card(
+                sw,
+                &pal,
+                auto_upd_card,
+                "Automatic Updates",
+                "Automatically check, download & install new releases",
+                &font,
+            );
+            let auto_tog = draw_toggle(
+                sw,
+                &pal,
+                auto_upd_card.right - 16.0,
+                cy + 31.0,
+                settings.updates.auto_install,
+            );
+            hits.push(HitBox {
+                rect: auto_tog,
+                action: UiAction::ToggleAutoUpdate,
+            });
+            cy += 70.0;
+
+            let upd_card = rect(content_x, cy, content_x + content_w, cy + 64.0);
+            let upd_sub = update_status.as_deref().unwrap_or(match install_channel {
+                crate::updater::InstallChannel::MicrosoftStore => {
+                    "Check Microsoft Store for the latest MSIX update"
+                }
+                _ => "Check GitHub Releases & NeosparkX for newer versions",
+            });
+            let has_pending = pending_update.is_some();
+            draw_settings_card_pad(
                 sw,
                 &pal,
                 upd_card,
                 tr(&lang, "Update_SoftwareUpdate"),
                 upd_sub,
                 &font,
+                if has_pending { 244.0 } else { 140.0 },
             );
+            if let Some(ref pinfo) = pending_update {
+                let inst_btn = rect(
+                    upd_card.right - 234.0,
+                    cy + 16.0,
+                    upd_card.right - 122.0,
+                    cy + 48.0,
+                );
+                draw_pill_btn(
+                    sw,
+                    &pal,
+                    inst_btn,
+                    &format!("Install v{}", pinfo.version),
+                    &font,
+                    true,
+                    false,
+                );
+                hits.push(HitBox {
+                    rect: inst_btn,
+                    action: UiAction::InstallUpdateNow,
+                });
+            }
             let upd_btn = rect(
-                upd_card.right - 128.0,
-                cy + 15.0,
+                upd_card.right - 114.0,
+                cy + 16.0,
                 upd_card.right - 16.0,
-                cy + 47.0,
+                cy + 48.0,
             );
-            draw_pill_btn(sw, &pal, upd_btn, "Check Now", &font, true, false);
+            draw_pill_btn(sw, &pal, upd_btn, "Check Now", &font, !has_pending, false);
             hits.push(HitBox {
                 rect: upd_btn,
                 action: UiAction::CheckUpdates,
@@ -3368,6 +3450,21 @@ unsafe extern "system" fn wnd_proc(
                         }
                         UiAction::OpenUrl(url) => open_url(url),
                         UiAction::CheckUpdates => enqueue_cmd(AppCommand::CheckForUpdatesManual),
+                        UiAction::ToggleAutoUpdate => {
+                            {
+                                let mut st = app.borrow_mut();
+                                let next = !st.settings.updates.auto_install;
+                                st.settings.updates.auto_install = next;
+                                st.settings.updates.auto_check = next;
+                            }
+                            enqueue_cmd(AppCommand::ApplySettingsBroadcast);
+                        }
+                        UiAction::InstallUpdateNow => {
+                            let pending = { app.borrow().pending_update.clone() };
+                            if let Some(info) = pending {
+                                enqueue_cmd(AppCommand::InstallPendingUpdate(info));
+                            }
+                        }
                     }
                 }
             }

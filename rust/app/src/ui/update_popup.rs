@@ -24,12 +24,14 @@ use crate::platform::graphics::{
 };
 use crate::platform::system::{create_app_icon, lparam_point, open_url, to_wide};
 use crate::ui::{AppCommand, AppState, enqueue_cmd, get_global_app, settings_window};
+use crate::updater::UpdateInfo;
 
 const CLASS_NAME: &str = "uWidgetsRsUpdatePopup";
 
 #[derive(Clone, Copy, PartialEq, Eq)]
 enum BtnAction {
-    Download,
+    Install,
+    OpenPage,
     Later,
     Skip,
 }
@@ -37,7 +39,7 @@ enum BtnAction {
 pub struct UpdatePopup {
     pub hwnd: HWND,
     pub surface: WindowSurface,
-    pub tag: String,
+    pub info: UpdateInfo,
     hover: Option<BtnAction>,
     buttons: Vec<(D2D_RECT_F, BtnAction)>,
 }
@@ -61,11 +63,18 @@ pub fn register_class() {
     }
 }
 
-pub fn open_popup(app: &Rc<RefCell<AppState>>, tag: String) {
+pub fn open_popup(app: &Rc<RefCell<AppState>>, info: UpdateInfo) {
     let existing = { app.borrow().update_win.as_ref().map(|u| u.hwnd) };
     if let Some(existing) = existing {
+        {
+            let mut st = app.borrow_mut();
+            if let Some(up) = st.update_win.as_mut() {
+                up.info = info;
+            }
+        }
         unsafe {
             let _ = ShowWindow(existing, SW_SHOW);
+            let _ = InvalidateRect(existing, None, false);
         }
         return;
     }
@@ -88,8 +97,8 @@ pub fn open_popup(app: &Rc<RefCell<AppState>>, tag: String) {
         windows::Win32::Graphics::Gdi::ReleaseDC(None, hdc);
         (logpx.max(96) as f32) / 96.0
     };
-    let w = (420.0 * dpi_scale).round() as i32;
-    let h = (210.0 * dpi_scale).round() as i32;
+    let w = (460.0 * dpi_scale).round() as i32;
+    let h = (224.0 * dpi_scale).round() as i32;
     let (x, y) = unsafe {
         let sx = GetSystemMetrics(SM_CXSCREEN);
         let sy = GetSystemMetrics(SM_CYSCREEN);
@@ -130,7 +139,7 @@ pub fn open_popup(app: &Rc<RefCell<AppState>>, tag: String) {
         app.borrow_mut().update_win = Some(UpdatePopup {
             hwnd,
             surface,
-            tag,
+            info,
             hover: None,
             buttons: Vec::new(),
         });
@@ -182,7 +191,26 @@ unsafe extern "system" fn wnd_proc(
                     fill_round_rect(&up.surface.dc, rect(0.0, 0.0, w, h), 0.0, bg);
 
                     let heading = tr(&lang, "Update_SoftwareUpdate");
-                    let body = tr(&lang, "Update_UpdateFormat").replace("{0}", &up.tag);
+                    let detail_line = up
+                        .info
+                        .notes
+                        .as_deref()
+                        .and_then(|n| n.lines().find(|l| !l.trim().is_empty()))
+                        .map(|l| l.trim().trim_start_matches('#').trim().to_string())
+                        .unwrap_or_else(|| {
+                            if up.info.download_url.is_some()
+                                || up.info.source == crate::updater::UpdateSource::MicrosoftStore
+                            {
+                                "Automatic in-place update ready".to_string()
+                            } else {
+                                "Download available on release page".to_string()
+                            }
+                        });
+                    let body = format!(
+                        "{} ({})\n{detail_line}",
+                        tr(&lang, "Update_UpdateFormat").replace("{0}", &up.info.version),
+                        up.info.source.label(),
+                    );
 
                     draw_text(
                         &up.surface.gfx,
@@ -201,9 +229,9 @@ unsafe extern "system" fn wnd_proc(
                         &up.surface.gfx,
                         &up.surface.dc,
                         &body,
-                        rect(22.0, 48.0, w - 22.0, 96.0),
+                        rect(22.0, 50.0, w - 22.0, 118.0),
                         &font,
-                        13.0,
+                        12.5,
                         DWRITE_FONT_WEIGHT_MEDIUM,
                         DWRITE_TEXT_ALIGNMENT_LEADING,
                         DWRITE_PARAGRAPH_ALIGNMENT_CENTER,
@@ -213,24 +241,16 @@ unsafe extern "system" fn wnd_proc(
 
                     let btn_y = h - 52.0;
                     let btn_h = 34.0;
-                    let r_dl = rect(w - 118.0, btn_y, w - 20.0, btn_y + btn_h);
-                    let r_later = rect(w - 208.0, btn_y, w - 126.0, btn_y + btn_h);
-                    let r_skip = rect(20.0, btn_y, 168.0, btn_y + btn_h);
+                    let r_inst = rect(w - 132.0, btn_y, w - 20.0, btn_y + btn_h);
+                    let r_page = rect(w - 226.0, btn_y, w - 140.0, btn_y + btn_h);
+                    let r_later = rect(w - 306.0, btn_y, w - 234.0, btn_y + btn_h);
+                    let r_skip = rect(20.0, btn_y, 134.0, btn_y + btn_h);
 
                     for (r, action, lbl, primary) in [
-                        (
-                            r_dl,
-                            BtnAction::Download,
-                            tr(&lang, "Update_Download"),
-                            true,
-                        ),
+                        (r_inst, BtnAction::Install, "Install Now", true),
+                        (r_page, BtnAction::OpenPage, "Details", false),
                         (r_later, BtnAction::Later, tr(&lang, "Update_Later"), false),
-                        (
-                            r_skip,
-                            BtnAction::Skip,
-                            tr(&lang, "Update_SkipThisVersion"),
-                            false,
-                        ),
+                        (r_skip, BtnAction::Skip, "Skip", false),
                     ] {
                         let hovered = up.hover == Some(action);
                         let fill = if primary {
@@ -353,17 +373,19 @@ unsafe extern "system" fn wnd_proc(
                                 && dip_y >= r.top
                                 && dip_y <= r.bottom
                         })
-                        .map(|(_, a)| (*a, up.tag.clone()))
+                        .map(|(_, a)| (*a, up.info.clone()))
                 })
             } else {
                 None
             };
-            if let Some((action, tag)) = hit {
+            if let Some((action, info)) = hit {
                 match action {
-                    BtnAction::Download => {
-                        open_url(
-                            "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest",
-                        );
+                    BtnAction::Install => {
+                        enqueue_cmd(AppCommand::InstallPendingUpdate(info));
+                        enqueue_cmd(AppCommand::CloseUpdatePopup);
+                    }
+                    BtnAction::OpenPage => {
+                        open_url(&info.release_page);
                         enqueue_cmd(AppCommand::CloseUpdatePopup);
                     }
                     BtnAction::Later => {
@@ -372,7 +394,7 @@ unsafe extern "system" fn wnd_proc(
                     BtnAction::Skip => {
                         if let Some(app) = get_global_app() {
                             let mut st = app.borrow_mut();
-                            st.settings.ignore_update = Some(tag);
+                            st.settings.ignore_update = Some(info.version);
                             st.save_settings();
                         }
                         enqueue_cmd(AppCommand::CloseUpdatePopup);

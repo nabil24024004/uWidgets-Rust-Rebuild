@@ -38,6 +38,7 @@ mod icons;
 mod models;
 mod platform;
 mod ui;
+mod updater;
 mod weather_client;
 mod widgets;
 
@@ -69,18 +70,21 @@ use crate::platform::graphics::SharedGraphics;
 use crate::platform::system::to_wide;
 use crate::ui::{
     AppCommand, AppState, CITY_SEARCH_SLOT, DETECT_LOC_SLOT, TIMER_1H, TIMER_1M, TIMER_1S,
-    TIMER_5M, TIMER_5S, TIMER_100MS, UPDATE_RESULT_SLOT, WM_APP_CITY_RESULTS,
-    WM_APP_DETECT_LOCATION, WM_APP_DISPATCH, WM_APP_TRAY, WM_APP_UPDATE_RESULT,
-    WM_APP_WEATHER_READY, clear_global_app, drain_commands, enqueue_cmd, get_global_app,
-    set_global_app,
+    TIMER_5M, TIMER_5S, TIMER_100MS, UPDATE_APPLY_SLOT, UPDATE_RESULT_SLOT, WM_APP_CITY_RESULTS,
+    WM_APP_DETECT_LOCATION, WM_APP_DISPATCH, WM_APP_TRAY, WM_APP_UPDATE_APPLIED,
+    WM_APP_UPDATE_RESULT, WM_APP_WEATHER_READY, clear_global_app, drain_commands, enqueue_cmd,
+    get_global_app, set_global_app,
 };
+use crate::updater::{ApplyResult, UpdateCheckOutcome};
 
 const HOST_CLASS: &str = "uWidgetsRsHost";
 const HOST_TITLE: &str = "uWidgetsRsHostWindow";
+const TIMER_STARTUP_UPDATE: usize = 107;
 
 static mut IPC_OPEN_SETTINGS_MSG: u32 = 0;
 
 fn main() {
+    updater::cleanup_old_portable_binary();
     let dir = config_dir();
     let crash_path = dir.join("crash_log.txt");
     std::panic::set_hook(Box::new(move |info| {
@@ -183,11 +187,22 @@ fn main() {
         ui::widget_window::spawn_widget_window(&app, *id);
     }
 
-    // Start adaptive shared timers + initial weather fetch
-    {
+    // Start adaptive shared timers + initial weather fetch + 12s one-shot startup auto-update timer
+    let auto_check_updates = {
         let mut st = app.borrow_mut();
         st.start_base_timers();
         st.trigger_weather_refresh(false);
+        st.settings.updates.auto_check
+    };
+    if auto_check_updates {
+        unsafe {
+            let _ = windows::Win32::UI::WindowsAndMessaging::SetTimer(
+                msg_hwnd,
+                TIMER_STARTUP_UPDATE,
+                12_000,
+                None,
+            );
+        }
     }
 
     // Show Settings window if `--settings` passed or no widgets exist yet
@@ -368,23 +383,95 @@ unsafe extern "system" fn host_wnd_proc(
         }
         WM_APP_UPDATE_RESULT => {
             let res = UPDATE_RESULT_SLOT.lock().ok().and_then(|mut g| g.take());
-            if let Some(tag_opt) = res
+            if let Some((outcome, manual)) = res
                 && let Some(app) = get_global_app()
             {
-                match tag_opt {
-                    Some(tag) => {
+                match outcome {
+                    UpdateCheckOutcome::Available(info) => {
                         {
                             let mut st = app.borrow_mut();
-                            st.update_status = Some(format!("Update available: v{tag}"));
+                            st.update_status = Some(format!(
+                                "Update available: v{} ({})",
+                                info.version,
+                                info.source.label()
+                            ));
+                            st.pending_update = Some(info.clone());
                             if let Some(sw) = st.settings_win.as_ref() {
                                 sw.invalidate();
                             }
                         }
-                        enqueue_cmd(AppCommand::OpenUpdatePopup(tag));
+                        enqueue_cmd(AppCommand::OpenUpdatePopup(info));
                     }
-                    None => {
+                    UpdateCheckOutcome::StoreUpdatedSilently => {
                         let mut st = app.borrow_mut();
-                        st.update_status = Some("Up to date".to_string());
+                        st.update_status =
+                            Some("Microsoft Store update installed automatically!".to_string());
+                        st.pending_update = None;
+                        if let Some(sw) = st.settings_win.as_ref() {
+                            sw.invalidate();
+                        }
+                    }
+                    UpdateCheckOutcome::DirectUpdatedAndRelaunching(ver) => {
+                        {
+                            let mut st = app.borrow_mut();
+                            st.update_status = Some(format!("Updating to v{ver}…"));
+                            if let Some(sw) = st.settings_win.as_ref() {
+                                sw.invalidate();
+                            }
+                        }
+                        enqueue_cmd(AppCommand::QuitApp);
+                    }
+                    UpdateCheckOutcome::UpToDate => {
+                        if manual {
+                            let mut st = app.borrow_mut();
+                            st.update_status =
+                                Some(format!("Up to date (v{})", crate::ui::APP_VERSION));
+                            st.pending_update = None;
+                            if let Some(sw) = st.settings_win.as_ref() {
+                                sw.invalidate();
+                            }
+                        }
+                    }
+                    UpdateCheckOutcome::Error(err) => {
+                        if manual {
+                            let mut st = app.borrow_mut();
+                            st.update_status = Some(format!("Update check failed: {err}"));
+                            if let Some(sw) = st.settings_win.as_ref() {
+                                sw.invalidate();
+                            }
+                        }
+                    }
+                }
+            }
+            LRESULT(0)
+        }
+        WM_APP_UPDATE_APPLIED => {
+            let res = UPDATE_APPLY_SLOT.lock().ok().and_then(|mut g| g.take());
+            if let Some(res) = res
+                && let Some(app) = get_global_app()
+            {
+                match res {
+                    Ok(ApplyResult::Relaunching) => {
+                        enqueue_cmd(AppCommand::QuitApp);
+                    }
+                    Ok(ApplyResult::StoreInstalled) => {
+                        let mut st = app.borrow_mut();
+                        st.update_status = Some("Microsoft Store update installed!".to_string());
+                        st.pending_update = None;
+                        if let Some(sw) = st.settings_win.as_ref() {
+                            sw.invalidate();
+                        }
+                    }
+                    Ok(ApplyResult::OpenedExternal) => {
+                        let mut st = app.borrow_mut();
+                        st.update_status = Some("Opened update installer".to_string());
+                        if let Some(sw) = st.settings_win.as_ref() {
+                            sw.invalidate();
+                        }
+                    }
+                    Err(e) => {
+                        let mut st = app.borrow_mut();
+                        st.update_status = Some(format!("Install failed: {e}"));
                         if let Some(sw) = st.settings_win.as_ref() {
                             sw.invalidate();
                         }
@@ -437,6 +524,27 @@ unsafe extern "system" fn host_wnd_proc(
                     }
                     TIMER_1H => {
                         st.trigger_weather_refresh(true);
+                        st.update_hours_elapsed = st.update_hours_elapsed.wrapping_add(1);
+                        if st.settings.updates.auto_check
+                            && st.update_hours_elapsed.is_multiple_of(12)
+                        {
+                            drop(st);
+                            enqueue_cmd(AppCommand::CheckForUpdatesAuto);
+                            return LRESULT(0);
+                        }
+                    }
+                    TIMER_STARTUP_UPDATE => {
+                        unsafe {
+                            let _ = windows::Win32::UI::WindowsAndMessaging::KillTimer(
+                                hwnd,
+                                TIMER_STARTUP_UPDATE,
+                            );
+                        }
+                        if st.settings.updates.auto_check {
+                            drop(st);
+                            enqueue_cmd(AppCommand::CheckForUpdatesAuto);
+                            return LRESULT(0);
+                        }
                     }
                     _ => {}
                 }
