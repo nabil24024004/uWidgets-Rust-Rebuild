@@ -10,6 +10,7 @@
 *.user
 
 # Compiled standalone executable & runtime caches/logs
+/dist/
 /uwidgets-rs.exe
 *.exe
 *.dll

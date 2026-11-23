@@ -30,7 +30,7 @@ use crate::weather_client::{
     search_cities_sync,
 };
 
-pub const APP_VERSION: &str = "0.6.0";
+pub const APP_VERSION: &str = "1.0.0";
 
 pub const WM_APP_TRAY: u32 = WM_APP + 1;
 pub const WM_APP_DISPATCH: u32 = WM_APP + 2;

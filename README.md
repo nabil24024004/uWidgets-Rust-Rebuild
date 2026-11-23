@@ -6,22 +6,23 @@
 
 ### Ultra-Lightweight, Real-Time Liquid Glass Desktop Widgets for Windows 10 & 11
 
+[![Release](https://img.shields.io/badge/Release-v1.0.0-2563EB?style=for-the-badge)](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest)
 [![Rust](https://img.shields.io/badge/Rust-Edition_2024-DEA584?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Platform](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?style=for-the-badge&logo=windows&logoColor=white)](#quick-start)
 [![Renderer](https://img.shields.io/badge/Direct2D-DirectComposition-5C2D91?style=for-the-badge)](#architecture)
-[![Binary Size](https://img.shields.io/badge/Single_EXE-~3.4_MB-10B981?style=for-the-badge)](#performance-benchmarks)
-[![Memory](https://img.shields.io/badge/Private_RAM-~25_MB-3B82F6?style=for-the-badge)](#performance-benchmarks)
+[![Setup Size](https://img.shields.io/badge/Setup_EXE-2.28_MB-10B981?style=for-the-badge)](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest)
+[![Memory](https://img.shields.io/badge/Private_RAM-~23_MB-3B82F6?style=for-the-badge)](#performance-benchmarks)
 [![Parity](https://img.shields.io/badge/Parity_Verified-6%2C400%20%2F%206%2C400-F59E0B?style=for-the-badge)](#parity-verification)
 
-**A ground-up native Win32 + Direct2D + DirectComposition rewrite of [uWidgets](https://github.com/creewick/uWidgets) in pure Rust** — featuring an Apple iOS 26–inspired **SDF Liquid Glass optical engine**, **5× lower RAM usage**, **18× smaller disk footprint**, **zero .NET/Avalonia runtime overhead**, and **instant disk-cached Weather**.
+**A ground-up native Win32 + Direct2D + DirectComposition rewrite of [uWidgets](https://github.com/creewick/uWidgets) in pure Rust** — featuring an Apple iOS 26–inspired **SDF Liquid Glass optical engine**, **5.5× lower RAM usage**, **18× smaller disk footprint**, **zero .NET/Avalonia runtime overhead**, **instant disk-cached Weather**, and a **2.28 MB native Windows Setup Installer**.
 
 <p>
-  <a href="#quick-start"><strong>🚀 Get Started</strong></a> ·
+  <a href="https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest"><strong>⬇️ Download v1.0.0 Setup</strong></a> ·
+  <a href="RELEASE_NOTES.md"><strong>📋 Release Notes</strong></a> ·
   <a href="#liquid-glass-optical-engine"><strong>✨ Liquid Glass</strong></a> ·
   <a href="#widget-catalog"><strong>🧩 16 Widgets</strong></a> ·
   <a href="#weather-customization"><strong>🌤️ Weather Tab</strong></a> ·
-  <a href="#performance-benchmarks"><strong>⚡ Benchmarks</strong></a> ·
-  <a href="#contributing"><strong>🤝 Contribute</strong></a>
+  <a href="#quick-start"><strong>🛠️ Build from Source</strong></a>
 </p>
 
 </div>
@@ -155,24 +156,37 @@ The dedicated **Settings → Weather** tab solves slow startup and gives you com
 
 ## Quick Start
 
-### Prerequisites
+### Quick Install (Windows 10 / 11 x64)
+
+1. Download **`uWidgets-Rust-v1.0.0-Setup.exe`** (`2.28 MB`) from the **[Latest GitHub Release](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest)** (or grab the standalone portable `.exe`).
+2. Run the native Setup Wizard — installs cleanly to `%LOCALAPPDATA%\uWidgets` with **zero Admin UAC prompt**, creates shortcuts, and registers clean uninstallation in Windows Installed Apps.
+
+<div align="center">
+  <img src="docs/images/setup-wizard.png" alt="uWidgets v1.0.0 Native Windows Setup Wizard" width="460" />
+</div>
+
+### Build & Run from Source
+
+#### Prerequisites
 - **Windows 10 (1903+) or Windows 11** (x64)
 - **[Rust Toolchain](https://rustup.rs/)** (Edition 2024 / `rustc 1.85+`, MSVC target `x86_64-pc-windows-msvc`)
 - **Windows 10/11 SDK** (provides `rc.exe` for embedding the native `.ico` icon & PE version metadata)
 
-### Build & Run from Source
-
 ```powershell
 # 1. Clone the repository
-git clone https://github.com/your-username/uWidgets-rs.git
-cd uWidgets-rs
+git clone https://github.com/nabil24024004/uWidgets-Rust-Rebuild.git
+cd uWidgets-Rust-Rebuild
 
-# 2. Build the standalone optimized release executable (~3.4 MB)
+# 2. Build the standalone optimized v1.0.0 app executable (~3.44 MB)
 cd rust/app
 cargo build --release
 
-# 3. Run directly (pass --settings to open the Settings window immediately)
-.\target\release\uwidgets-rs.exe --settings
+# 3. (Optional) Build the compressed 2.28 MB native Windows Setup Installer
+cd ../setup
+cargo build --release
+
+# 4. Run directly (pass --settings to open the Settings window immediately)
+..\app\target\release\uwidgets-rs.exe --settings
 ```
 
 > **Tip:** Right-click the **uWidgets** icon in your Windows System Tray at any time to open **Settings**, reload widgets, or exit. You can also right-click any desktop widget to **Edit**, **Resize** (preset grid sizes), or **Remove** it.
@@ -213,7 +227,7 @@ uWidgets in Rust/
 ├── docs/images/               # README showcase screenshots
 ├── reference-oracle/          # .NET 8 parity reference oracle used during verification
 ├── rust/
-│   ├── app/                   # Native Win32 + Direct2D + DirectComposition app
+│   ├── app/                   # Native Win32 + Direct2D + DirectComposition app (v1.0.0)
 │   │   ├── build.rs           # Embeds uWidgets.ico + Windows PE VersionInfo
 │   │   └── src/
 │   │       ├── main.rs        # Win32 host message loop, adaptive timers & IPC
@@ -222,12 +236,14 @@ uWidgets in Rust/
 │   │       ├── platform/      # Direct2D graphics, SDF Liquid Glass engine, Win32 APIs
 │   │       ├── ui/            # Settings, Widget cards, Edit dialog, Tray, Update popup
 │   │       └── widgets/       # All 16 widget renderers
+│   ├── setup/                 # Native Win32 v1.0.0 Setup Wizard & Uninstaller (2.28 MB)
 │   ├── core-rs/               # Verified core layout/theme math crate
 │   ├── calendar-rs/           # Verified calendar logic crate
 │   ├── clock-rs/              # Verified clock logic crate
 │   ├── weather-rs/            # Verified weather logic crate
 │   ├── monitor-rs/            # Verified system monitor math crate
 │   └── notes-reminders-rs/    # Verified notes & reminders logic crate
+├── RELEASE_NOTES.md           # v1.0.0 release notes & SHA-256 checksums
 └── README.md
 ```
 
@@ -251,7 +267,7 @@ Have an idea for a new Liquid Glass widget, found an edge case, or want to optim
 
 | ⭐ **Love this project?** | 🐛 **Found a bug?** | 💡 **Want a new widget?** | 🔧 **Ready to build?** |
 | :---: | :---: | :---: | :---: |
-| **Star this repository** to support ultra-fast native Windows tools! | [Open a Bug Report](../../issues/new?labels=bug) with Windows version & steps | [Request a Widget](../../issues/new?labels=enhancement) or Liquid Glass preset | Fork, branch, run `cargo clippy && cargo test`, and open a Pull Request! |
+| **Star this repository** to support ultra-fast native Windows tools! | [Open a Bug Report](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/issues/new?labels=bug) with Windows version & steps | [Request a Widget](https://github.com/nabil24024004/uWidgets-Rust-Rebuild/issues/new?labels=enhancement) or Liquid Glass preset | Fork, branch, run `cargo clippy && cargo test`, and open a Pull Request! |
 
 </div>
 

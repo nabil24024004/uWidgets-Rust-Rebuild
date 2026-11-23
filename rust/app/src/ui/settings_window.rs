@@ -2507,7 +2507,7 @@ fn paint_settings(st: &mut AppState) {
                 &sw.surface.gfx,
                 &sw.surface.dc,
                 &format!(
-                    "{}: {APP_VERSION}-rs   •   Native Win32 + Direct2D   •   RAM: {ws_mb:.1} MB WS ({priv_mb:.1} MB Private)",
+                    "{}: v{APP_VERSION}   •   Native Win32 + Direct2D   •   RAM: {ws_mb:.1} MB WS ({priv_mb:.1} MB Private)",
                     tr(&lang, "Settings_About_Version")
                 ),
                 rect(
@@ -2563,7 +2563,7 @@ fn paint_settings(st: &mut AppState) {
             );
             hits.push(HitBox {
                 rect: repo_btn,
-                action: UiAction::OpenUrl("https://github.com/creewick/uWidgets"),
+                action: UiAction::OpenUrl("https://github.com/nabil24024004/uWidgets-Rust-Rebuild"),
             });
             cy += 64.0;
 
@@ -2593,7 +2593,9 @@ fn paint_settings(st: &mut AppState) {
             );
             hits.push(HitBox {
                 rect: bug_btn,
-                action: UiAction::OpenUrl("https://github.com/creewick/uWidgets/issues"),
+                action: UiAction::OpenUrl(
+                    "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/issues",
+                ),
             });
             cy += 64.0;
 

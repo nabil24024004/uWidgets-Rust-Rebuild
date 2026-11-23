@@ -11,6 +11,8 @@ fn main() {
         );
         res.set("CompanyName", "uWidgets-rs");
         res.set("OriginalFilename", "uwidgets-rs.exe");
+        res.set("FileVersion", "1.0.0.0");
+        res.set("ProductVersion", "1.0.0");
         if let Err(err) = res.compile() {
             println!("cargo:warning=winres icon embedding failed: {err}");
         }

@@ -480,7 +480,7 @@ pub fn check_latest_github_version(
 ) -> Option<String> {
     let agent = build_fast_agent();
     let resp = agent
-        .get("https://github.com/creewick/uWidgets/releases/latest")
+        .get("https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest")
         .call()
         .ok()?;
     let final_url = resp.get_url().to_string();

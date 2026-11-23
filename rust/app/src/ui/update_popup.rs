@@ -361,7 +361,9 @@ unsafe extern "system" fn wnd_proc(
             if let Some((action, tag)) = hit {
                 match action {
                     BtnAction::Download => {
-                        open_url("https://github.com/creewick/uWidgets/releases/latest");
+                        open_url(
+                            "https://github.com/nabil24024004/uWidgets-Rust-Rebuild/releases/latest",
+                        );
                         enqueue_cmd(AppCommand::CloseUpdatePopup);
                     }
                     BtnAction::Later => {

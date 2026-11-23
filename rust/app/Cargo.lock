@@ -630,7 +630,7 @@ checksum = "3a3b425286980a367278453f3b6d28cdcb134b574e5a35824a6ff5eebad50bb6"
 
 [[package]]
 name = "uwidgets-rs"
-version = "0.6.0"
+version = "1.0.0"
 dependencies = [
  "chrono",
  "serde",
