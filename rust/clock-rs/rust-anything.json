@@ -1,0 +1,328 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "Clock/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "clock-rs",
+  "exports": [
+    {
+      "name": "SecondsAngle",
+      "file": "Clock/ClockLogic.cs",
+      "line": 7,
+      "params": [
+        {
+          "name": "second",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "millisecond",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.SecondsAngle(int second, int millisecond)"
+    },
+    {
+      "name": "MinutesAngle",
+      "file": "Clock/ClockLogic.cs",
+      "line": 12,
+      "params": [
+        {
+          "name": "minute",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "second",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.MinutesAngle(int minute, int second)"
+    },
+    {
+      "name": "HoursAngle",
+      "file": "Clock/ClockLogic.cs",
+      "line": 17,
+      "params": [
+        {
+          "name": "hour",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "minute",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.HoursAngle(int hour, int minute)"
+    },
+    {
+      "name": "ClockHandEndY",
+      "file": "Clock/ClockLogic.cs",
+      "line": 22,
+      "params": [
+        {
+          "name": "length",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.ClockHandEndY(int length)"
+    },
+    {
+      "name": "ClockHandPath",
+      "file": "Clock/ClockLogic.cs",
+      "line": 27,
+      "params": [
+        {
+          "name": "length",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.ClockHandPath(int length)"
+    },
+    {
+      "name": "WorldIsWideLayout",
+      "file": "Clock/ClockLogic.cs",
+      "line": 32,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.WorldIsWideLayout(double width, double height)"
+    },
+    {
+      "name": "CityFullName",
+      "file": "Clock/ClockLogic.cs",
+      "line": 41,
+      "params": [
+        {
+          "name": "displayName",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.CityFullName(string displayName)"
+    },
+    {
+      "name": "CityShortName",
+      "file": "Clock/ClockLogic.cs",
+      "line": 49,
+      "params": [
+        {
+          "name": "displayName",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.CityShortName(string displayName)"
+    },
+    {
+      "name": "CityAbbreviation",
+      "file": "Clock/ClockLogic.cs",
+      "line": 59,
+      "params": [
+        {
+          "name": "displayName",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        },
+        {
+          "name": "isLocal",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.CityAbbreviation(string displayName, bool isLocal)"
+    },
+    {
+      "name": "FormatTimeZoneDiff",
+      "file": "Clock/ClockLogic.cs",
+      "line": 74,
+      "params": [
+        {
+          "name": "diffMinutes",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.FormatTimeZoneDiff(int diffMinutes)"
+    },
+    {
+      "name": "RelativeDayKey",
+      "file": "Clock/ClockLogic.cs",
+      "line": 89,
+      "params": [
+        {
+          "name": "dayDelta",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.RelativeDayKey(int dayDelta)"
+    },
+    {
+      "name": "FormatDigitalTime",
+      "file": "Clock/ClockLogic.cs",
+      "line": 102,
+      "params": [
+        {
+          "name": "hour24",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "minute",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "second",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "use24Hours",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        },
+        {
+          "name": "showSeconds",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Clock.ClockLogic.FormatDigitalTime(int hour24, int minute, int second, bool use24Hours, bool showSeconds)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}

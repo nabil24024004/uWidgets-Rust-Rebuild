@@ -1,0 +1,32 @@
+# Rust build outputs
+/rust/**/target/
+**/target/
+**/*.rs.bk
+**/*.pdb
+
+# .NET reference oracle build artifacts
+/reference-oracle/bin/
+/reference-oracle/obj/
+*.user
+
+# Compiled standalone executable & runtime caches/logs
+/uwidgets-rs.exe
+*.exe
+*.dll
+*.lib
+*.res
+crash_log.txt
+weather_crash_log.txt
+weatherCache.json
+*.json.tmp
+
+# Personal desktop widget layout & user settings (auto-created on first run)
+/appSettings.json
+/layout.json
+
+# OS / IDE clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

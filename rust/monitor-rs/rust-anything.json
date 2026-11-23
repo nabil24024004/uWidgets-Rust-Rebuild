@@ -1,0 +1,181 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "Monitor/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "monitor-rs",
+  "exports": [
+    {
+      "name": "MonitorStrokeDashOffset",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 8,
+      "params": [
+        {
+          "name": "value",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.MonitorStrokeDashOffset(double value)"
+    },
+    {
+      "name": "MonitorPercentText",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 13,
+      "params": [
+        {
+          "name": "value",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.MonitorPercentText(double value)"
+    },
+    {
+      "name": "MonitorIsCompact",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 19,
+      "params": [
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.MonitorIsCompact(double height)"
+    },
+    {
+      "name": "MonitorMargin",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 24,
+      "params": [
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.MonitorMargin(double height)"
+    },
+    {
+      "name": "ComputeRamRatio",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 29,
+      "params": [
+        {
+          "name": "totalKb",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "freeKb",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.ComputeRamRatio(double totalKb, double freeKb)"
+    },
+    {
+      "name": "ComputeNetworkRatio",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 38,
+      "params": [
+        {
+          "name": "sentBytesPerSec",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "recvBytesPerSec",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "linkSpeedBitsPerSec",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.ComputeNetworkRatio(double sentBytesPerSec, double recvBytesPerSec, double linkSpeedBitsPerSec)"
+    },
+    {
+      "name": "MetricLocaleKey",
+      "file": "Monitor/MonitorLogic.cs",
+      "line": 47,
+      "params": [
+        {
+          "name": "metricType",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Monitor.MonitorLogic.MetricLocaleKey(int metricType)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}

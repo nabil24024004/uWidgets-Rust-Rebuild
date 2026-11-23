@@ -1,0 +1,1424 @@
+{"fn":"SecondsAngle","args":[0,0],"ok":0}
+{"fn":"SecondsAngle","args":[42,1],"ok":252.00599999999997}
+{"fn":"SecondsAngle","args":[42,-1],"ok":251.99400000000003}
+{"fn":"SecondsAngle","args":[42,0],"ok":252}
+{"fn":"SecondsAngle","args":[255,-2147483648],"ok":-12883371.888}
+{"fn":"SecondsAngle","args":[7,42],"ok":42.251999999999995}
+{"fn":"SecondsAngle","args":[-1,100],"ok":-5.4}
+{"fn":"SecondsAngle","args":[0,-1],"ok":-0.006}
+{"fn":"SecondsAngle","args":[255,42],"ok":1530.252}
+{"fn":"SecondsAngle","args":[-2147483648,255],"ok":-12884901886.47}
+{"fn":"SecondsAngle","args":[1,-1],"ok":5.994}
+{"fn":"SecondsAngle","args":[7,255],"ok":43.53}
+{"fn":"SecondsAngle","args":[1,2147483647],"ok":12884907.882}
+{"fn":"SecondsAngle","args":[0,2147483647],"ok":12884901.882}
+{"fn":"SecondsAngle","args":[-2147483648,-100],"ok":-12884901888.599998}
+{"fn":"SecondsAngle","args":[-1,255],"ok":-4.47}
+{"fn":"SecondsAngle","args":[255,2],"ok":1530.0120000000002}
+{"fn":"SecondsAngle","args":[100,1],"ok":600.0060000000001}
+{"fn":"SecondsAngle","args":[255,100],"ok":1530.6}
+{"fn":"SecondsAngle","args":[-100,42],"ok":-599.748}
+{"fn":"SecondsAngle","args":[2147483647,2147483647],"ok":12897786783.882}
+{"fn":"SecondsAngle","args":[42,42],"ok":252.252}
+{"fn":"SecondsAngle","args":[2147483647,42],"ok":12884901882.252}
+{"fn":"SecondsAngle","args":[2,0],"ok":12}
+{"fn":"SecondsAngle","args":[7,2147483647],"ok":12884943.882}
+{"fn":"SecondsAngle","args":[7,7],"ok":42.042}
+{"fn":"SecondsAngle","args":[42,100],"ok":252.60000000000002}
+{"fn":"SecondsAngle","args":[2147483647,2],"ok":12884901882.012001}
+{"fn":"SecondsAngle","args":[2,255],"ok":13.53}
+{"fn":"SecondsAngle","args":[7,1],"ok":42.006}
+{"fn":"SecondsAngle","args":[2,2],"ok":12.011999999999999}
+{"fn":"SecondsAngle","args":[-100,2],"ok":-599.988}
+{"fn":"SecondsAngle","args":[-2147483648,7],"ok":-12884901887.958}
+{"fn":"SecondsAngle","args":[2,100],"ok":12.600000000000001}
+{"fn":"SecondsAngle","args":[7,0],"ok":42}
+{"fn":"SecondsAngle","args":[2147483647,7],"ok":12884901882.042}
+{"fn":"SecondsAngle","args":[-1,-1],"ok":-6.005999999999999}
+{"fn":"SecondsAngle","args":[-2147483648,-1],"ok":-12884901888.006}
+{"fn":"SecondsAngle","args":[0,255],"ok":1.53}
+{"fn":"SecondsAngle","args":[100,7],"ok":600.042}
+{"fn":"SecondsAngle","args":[-100,7],"ok":-599.958}
+{"fn":"SecondsAngle","args":[0,-2147483648],"ok":-12884901.888}
+{"fn":"SecondsAngle","args":[-100,255],"ok":-598.47}
+{"fn":"SecondsAngle","args":[-1,-100],"ok":-6.6000000000000005}
+{"fn":"SecondsAngle","args":[1,42],"ok":6.252000000000001}
+{"fn":"SecondsAngle","args":[2147483647,100],"ok":12884901882.599998}
+{"fn":"SecondsAngle","args":[-2147483648,1],"ok":-12884901887.994}
+{"fn":"SecondsAngle","args":[1,2],"ok":6.0120000000000005}
+{"fn":"SecondsAngle","args":[1,-2147483648],"ok":-12884895.888}
+{"fn":"SecondsAngle","args":[2,-2147483648],"ok":-12884889.888}
+{"fn":"SecondsAngle","args":[-100,-1],"ok":-600.0060000000001}
+{"fn":"SecondsAngle","args":[-1,-2147483648],"ok":-12884907.888}
+{"fn":"SecondsAngle","args":[-100,2147483647],"ok":12884301.882}
+{"fn":"SecondsAngle","args":[100,100],"ok":600.5999999999999}
+{"fn":"SecondsAngle","args":[-2147483648,-2147483648],"ok":-12897786789.887999}
+{"fn":"SecondsAngle","args":[-2147483648,42],"ok":-12884901887.748}
+{"fn":"SecondsAngle","args":[2,1],"ok":12.006}
+{"fn":"SecondsAngle","args":[2,-1],"ok":11.994}
+{"fn":"SecondsAngle","args":[42,-100],"ok":251.39999999999998}
+{"fn":"SecondsAngle","args":[255,-1],"ok":1529.994}
+{"fn":"SecondsAngle","args":[-2147483648,100],"ok":-12884901887.400002}
+{"fn":"SecondsAngle","args":[0,42],"ok":0.252}
+{"fn":"SecondsAngle","args":[2147483647,-1],"ok":12884901881.994}
+{"fn":"SecondsAngle","args":[0,2],"ok":0.012}
+{"fn":"SecondsAngle","args":[-1,0],"ok":-6}
+{"fn":"SecondsAngle","args":[2147483647,-100],"ok":12884901881.400002}
+{"fn":"SecondsAngle","args":[-1,7],"ok":-5.958}
+{"fn":"SecondsAngle","args":[-100,1],"ok":-599.9939999999999}
+{"fn":"SecondsAngle","args":[1,1],"ok":6.005999999999999}
+{"fn":"SecondsAngle","args":[-100,-2147483648],"ok":-12885501.888}
+{"fn":"SecondsAngle","args":[2147483647,0],"ok":12884901882}
+{"fn":"SecondsAngle","args":[7,100],"ok":42.599999999999994}
+{"fn":"SecondsAngle","args":[100,-100],"ok":599.4000000000001}
+{"fn":"SecondsAngle","args":[1,100],"ok":6.6000000000000005}
+{"fn":"SecondsAngle","args":[255,0],"ok":1530}
+{"fn":"SecondsAngle","args":[0,100],"ok":0.6000000000000001}
+{"fn":"SecondsAngle","args":[1,-100],"ok":5.4}
+{"fn":"SecondsAngle","args":[-1,42],"ok":-5.747999999999999}
+{"fn":"SecondsAngle","args":[0,1],"ok":0.006}
+{"fn":"SecondsAngle","args":[-2147483648,0],"ok":-12884901888}
+{"fn":"SecondsAngle","args":[2,-100],"ok":11.399999999999999}
+{"fn":"SecondsAngle","args":[-1,1],"ok":-5.994}
+{"fn":"SecondsAngle","args":[42,7],"ok":252.04199999999997}
+{"fn":"SecondsAngle","args":[42,2],"ok":252.012}
+{"fn":"SecondsAngle","args":[7,2],"ok":42.012}
+{"fn":"SecondsAngle","args":[2,2147483647],"ok":12884913.882}
+{"fn":"SecondsAngle","args":[-1,2],"ok":-5.9879999999999995}
+{"fn":"SecondsAngle","args":[-1,2147483647],"ok":12884895.882}
+{"fn":"SecondsAngle","args":[2,7],"ok":12.042000000000002}
+{"fn":"SecondsAngle","args":[100,42],"ok":600.252}
+{"fn":"SecondsAngle","args":[42,255],"ok":253.53000000000003}
+{"fn":"SecondsAngle","args":[1,7],"ok":6.042}
+{"fn":"SecondsAngle","args":[-2147483648,2147483647],"ok":-12872016986.118}
+{"fn":"SecondsAngle","args":[255,1],"ok":1530.006}
+{"fn":"SecondsAngle","args":[100,2147483647],"ok":12885501.882}
+{"fn":"SecondsAngle","args":[100,255],"ok":601.53}
+{"fn":"SecondsAngle","args":[2147483647,255],"ok":12884901883.53}
+{"fn":"SecondsAngle","args":[255,2147483647],"ok":12886431.882}
+{"fn":"SecondsAngle","args":[100,0],"ok":600}
+{"fn":"SecondsAngle","args":[255,7],"ok":1530.042}
+{"fn":"SecondsAngle","args":[100,2],"ok":600.012}
+{"fn":"SecondsAngle","args":[0,-100],"ok":-0.6000000000000001}
+{"fn":"SecondsAngle","args":[1,0],"ok":6}
+{"fn":"SecondsAngle","args":[-100,-100],"ok":-600.5999999999999}
+{"fn":"SecondsAngle","args":[7,-100],"ok":41.400000000000006}
+{"fn":"SecondsAngle","args":[2147483647,-2147483648],"ok":12872016980.112}
+{"fn":"SecondsAngle","args":[7,-1],"ok":41.994}
+{"fn":"SecondsAngle","args":[2147483647,1],"ok":12884901882.006}
+{"fn":"SecondsAngle","args":[-2147483648,2],"ok":-12884901887.987999}
+{"fn":"SecondsAngle","args":[255,-100],"ok":1529.4}
+{"fn":"SecondsAngle","args":[100,-2147483648],"ok":-12884301.888}
+{"fn":"SecondsAngle","args":[2,42],"ok":12.251999999999999}
+{"fn":"SecondsAngle","args":[0,7],"ok":0.042}
+{"fn":"SecondsAngle","args":[7,-2147483648],"ok":-12884859.888}
+{"fn":"SecondsAngle","args":[42,-2147483648],"ok":-12884649.888}
+{"fn":"SecondsAngle","args":[100,-1],"ok":599.9939999999999}
+{"fn":"SecondsAngle","args":[1,255],"ok":7.529999999999999}
+{"fn":"SecondsAngle","args":[-100,100],"ok":-599.4000000000001}
+{"fn":"SecondsAngle","args":[42,2147483647],"ok":12885153.882}
+{"fn":"SecondsAngle","args":[255,255],"ok":1531.53}
+{"fn":"SecondsAngle","args":[-100,0],"ok":-600}
+{"fn":"SecondsAngle","args":[-100,-7],"ok":-600.042}
+{"fn":"MinutesAngle","args":[255,-1],"ok":1529.8999999999999}
+{"fn":"MinutesAngle","args":[2147483647,2],"ok":12884901882.2}
+{"fn":"MinutesAngle","args":[1,42],"ok":10.2}
+{"fn":"MinutesAngle","args":[7,42],"ok":46.2}
+{"fn":"MinutesAngle","args":[-1,2],"ok":-5.8}
+{"fn":"MinutesAngle","args":[7,-2147483648],"ok":-214748322.8}
+{"fn":"MinutesAngle","args":[2,2147483647],"ok":214748376.7}
+{"fn":"MinutesAngle","args":[0,1],"ok":0.1}
+{"fn":"MinutesAngle","args":[255,2147483647],"ok":214749894.7}
+{"fn":"MinutesAngle","args":[100,-1],"ok":599.9}
+{"fn":"MinutesAngle","args":[1,-100],"ok":-4}
+{"fn":"MinutesAngle","args":[0,-1],"ok":-0.1}
+{"fn":"MinutesAngle","args":[255,255],"ok":1555.5}
+{"fn":"MinutesAngle","args":[100,100],"ok":610}
+{"fn":"MinutesAngle","args":[42,-2147483648],"ok":-214748112.8}
+{"fn":"MinutesAngle","args":[7,2147483647],"ok":214748406.7}
+{"fn":"MinutesAngle","args":[100,42],"ok":604.2}
+{"fn":"MinutesAngle","args":[-2147483648,0],"ok":-12884901888}
+{"fn":"MinutesAngle","args":[-100,-1],"ok":-600.1}
+{"fn":"MinutesAngle","args":[0,255],"ok":25.5}
+{"fn":"MinutesAngle","args":[2147483647,42],"ok":12884901886.2}
+{"fn":"MinutesAngle","args":[2147483647,255],"ok":12884901907.5}
+{"fn":"MinutesAngle","args":[0,0],"ok":0}
+{"fn":"MinutesAngle","args":[1,100],"ok":16}
+{"fn":"MinutesAngle","args":[1,-1],"ok":5.8999999999999995}
+{"fn":"MinutesAngle","args":[-2147483648,1],"ok":-12884901887.9}
+{"fn":"MinutesAngle","args":[-2147483648,42],"ok":-12884901883.8}
+{"fn":"MinutesAngle","args":[0,2147483647],"ok":214748364.7}
+{"fn":"MinutesAngle","args":[2,-100],"ok":1.9999999999999996}
+{"fn":"MinutesAngle","args":[42,100],"ok":262}
+{"fn":"MinutesAngle","args":[255,-2147483648],"ok":-214746834.8}
+{"fn":"MinutesAngle","args":[100,-2147483648],"ok":-214747764.8}
+{"fn":"MinutesAngle","args":[-1,7],"ok":-5.3}
+{"fn":"MinutesAngle","args":[42,2],"ok":252.2}
+{"fn":"MinutesAngle","args":[-1,1],"ok":-5.8999999999999995}
+{"fn":"MinutesAngle","args":[7,7],"ok":42.699999999999996}
+{"fn":"MinutesAngle","args":[0,7],"ok":0.7}
+{"fn":"MinutesAngle","args":[-1,-2147483648],"ok":-214748370.8}
+{"fn":"MinutesAngle","args":[0,-2147483648],"ok":-214748364.8}
+{"fn":"MinutesAngle","args":[2,1],"ok":12.1}
+{"fn":"MinutesAngle","args":[2,2],"ok":12.2}
+{"fn":"MinutesAngle","args":[7,-1],"ok":41.9}
+{"fn":"MinutesAngle","args":[-100,100],"ok":-590}
+{"fn":"MinutesAngle","args":[42,1],"ok":252.1}
+{"fn":"MinutesAngle","args":[-100,255],"ok":-574.5}
+{"fn":"MinutesAngle","args":[42,42],"ok":256.20000000000005}
+{"fn":"MinutesAngle","args":[-100,-100],"ok":-610}
+{"fn":"MinutesAngle","args":[2,100],"ok":22}
+{"fn":"MinutesAngle","args":[255,2],"ok":1530.2}
+{"fn":"MinutesAngle","args":[100,0],"ok":600}
+{"fn":"MinutesAngle","args":[255,1],"ok":1530.1000000000001}
+{"fn":"MinutesAngle","args":[2,7],"ok":12.7}
+{"fn":"MinutesAngle","args":[7,0],"ok":42}
+{"fn":"MinutesAngle","args":[-100,2],"ok":-599.8}
+{"fn":"MinutesAngle","args":[-1,42],"ok":-1.8000000000000003}
+{"fn":"MinutesAngle","args":[7,2],"ok":42.2}
+{"fn":"MinutesAngle","args":[1,255],"ok":31.5}
+{"fn":"MinutesAngle","args":[-2147483648,-100],"ok":-12884901898}
+{"fn":"MinutesAngle","args":[42,255],"ok":277.5}
+{"fn":"MinutesAngle","args":[0,100],"ok":10}
+{"fn":"MinutesAngle","args":[-2147483648,2],"ok":-12884901887.8}
+{"fn":"MinutesAngle","args":[42,-1],"ok":251.9}
+{"fn":"MinutesAngle","args":[-100,0],"ok":-600}
+{"fn":"MinutesAngle","args":[255,0],"ok":1530}
+{"fn":"MinutesAngle","args":[2,255],"ok":37.5}
+{"fn":"MinutesAngle","args":[2,42],"ok":16.200000000000003}
+{"fn":"MinutesAngle","args":[2147483647,0],"ok":12884901882}
+{"fn":"MinutesAngle","args":[-2147483648,2147483647],"ok":-12670153523.300001}
+{"fn":"MinutesAngle","args":[100,2147483647],"ok":214748964.7}
+{"fn":"MinutesAngle","args":[100,255],"ok":625.5}
+{"fn":"MinutesAngle","args":[100,2],"ok":600.2}
+{"fn":"MinutesAngle","args":[-2147483648,-2147483648],"ok":-13099650252.8}
+{"fn":"MinutesAngle","args":[-100,-2147483648],"ok":-214748964.8}
+{"fn":"MinutesAngle","args":[-2147483648,255],"ok":-12884901862.5}
+{"fn":"MinutesAngle","args":[1,0],"ok":6}
+{"fn":"MinutesAngle","args":[42,0],"ok":252}
+{"fn":"MinutesAngle","args":[7,255],"ok":67.5}
+{"fn":"MinutesAngle","args":[255,7],"ok":1530.7}
+{"fn":"MinutesAngle","args":[2147483647,2147483647],"ok":13099650246.7}
+{"fn":"MinutesAngle","args":[-100,2147483647],"ok":214747764.7}
+{"fn":"MinutesAngle","args":[-1,-100],"ok":-16}
+{"fn":"MinutesAngle","args":[-2147483648,7],"ok":-12884901887.300001}
+{"fn":"MinutesAngle","args":[-100,42],"ok":-595.8}
+{"fn":"MinutesAngle","args":[-1,-1],"ok":-6.1}
+{"fn":"MinutesAngle","args":[255,-100],"ok":1520}
+{"fn":"MinutesAngle","args":[-2147483648,100],"ok":-12884901878}
+{"fn":"MinutesAngle","args":[-1,0],"ok":-6}
+{"fn":"MinutesAngle","args":[7,100],"ok":52}
+{"fn":"MinutesAngle","args":[2,-2147483648],"ok":-214748352.8}
+{"fn":"MinutesAngle","args":[0,42],"ok":4.199999999999999}
+{"fn":"MinutesAngle","args":[42,7],"ok":252.7}
+{"fn":"MinutesAngle","args":[2147483647,-100],"ok":12884901872}
+{"fn":"MinutesAngle","args":[1,-2147483648],"ok":-214748358.8}
+{"fn":"MinutesAngle","args":[2,0],"ok":12}
+{"fn":"MinutesAngle","args":[1,2],"ok":6.200000000000001}
+{"fn":"MinutesAngle","args":[7,1],"ok":42.1}
+{"fn":"MinutesAngle","args":[2147483647,-2147483648],"ok":12670153517.199999}
+{"fn":"MinutesAngle","args":[100,-100],"ok":590}
+{"fn":"MinutesAngle","args":[-2147483648,-1],"ok":-12884901888.100002}
+{"fn":"MinutesAngle","args":[0,-100],"ok":-10}
+{"fn":"MinutesAngle","args":[42,-100],"ok":242}
+{"fn":"MinutesAngle","args":[2147483647,7],"ok":12884901882.699999}
+{"fn":"MinutesAngle","args":[7,-100],"ok":32}
+{"fn":"MinutesAngle","args":[100,7],"ok":600.6999999999999}
+{"fn":"MinutesAngle","args":[-1,255],"ok":19.5}
+{"fn":"MinutesAngle","args":[2147483647,100],"ok":12884901892}
+{"fn":"MinutesAngle","args":[0,2],"ok":0.2}
+{"fn":"MinutesAngle","args":[-100,7],"ok":-599.3000000000001}
+{"fn":"MinutesAngle","args":[255,42],"ok":1534.1999999999998}
+{"fn":"MinutesAngle","args":[-100,1],"ok":-599.9}
+{"fn":"MinutesAngle","args":[-1,2147483647],"ok":214748358.7}
+{"fn":"MinutesAngle","args":[-1,100],"ok":4}
+{"fn":"MinutesAngle","args":[1,7],"ok":6.7}
+{"fn":"MinutesAngle","args":[42,2147483647],"ok":214748616.7}
+{"fn":"MinutesAngle","args":[1,2147483647],"ok":214748370.7}
+{"fn":"MinutesAngle","args":[255,100],"ok":1540}
+{"fn":"MinutesAngle","args":[2147483647,-1],"ok":12884901881.9}
+{"fn":"MinutesAngle","args":[2147483647,1],"ok":12884901882.1}
+{"fn":"MinutesAngle","args":[100,1],"ok":600.1}
+{"fn":"MinutesAngle","args":[2,-1],"ok":11.9}
+{"fn":"MinutesAngle","args":[1,1],"ok":6.1}
+{"fn":"MinutesAngle","args":[-7,-1],"ok":-42.1}
+{"fn":"MinutesAngle","args":[255,-7],"ok":1529.3}
+{"fn":"HoursAngle","args":[42,-1],"ok":179.5}
+{"fn":"HoursAngle","args":[7,-100],"ok":160}
+{"fn":"HoursAngle","args":[-2147483648,2147483647],"ok":1073741583.5}
+{"fn":"HoursAngle","args":[1,0],"ok":30}
+{"fn":"HoursAngle","args":[0,255],"ok":127.5}
+{"fn":"HoursAngle","args":[100,2147483647],"ok":1073741943.5}
+{"fn":"HoursAngle","args":[0,42],"ok":21}
+{"fn":"HoursAngle","args":[255,100],"ok":140}
+{"fn":"HoursAngle","args":[2147483647,-1],"ok":209.5}
+{"fn":"HoursAngle","args":[2,100],"ok":110.00000000000001}
+{"fn":"HoursAngle","args":[1,-2147483648],"ok":-1073741794}
+{"fn":"HoursAngle","args":[0,2],"ok":1}
+{"fn":"HoursAngle","args":[255,-100],"ok":40}
+{"fn":"HoursAngle","args":[255,2147483647],"ok":1073741913.5}
+{"fn":"HoursAngle","args":[42,255],"ok":307.5}
+{"fn":"HoursAngle","args":[42,-100],"ok":130}
+{"fn":"HoursAngle","args":[100,-100],"ok":69.99999999999999}
+{"fn":"HoursAngle","args":[42,2147483647],"ok":1073742003.5}
+{"fn":"HoursAngle","args":[-1,1],"ok":-29.5}
+{"fn":"HoursAngle","args":[2,1],"ok":60.5}
+{"fn":"HoursAngle","args":[7,0],"ok":210}
+{"fn":"HoursAngle","args":[1,42],"ok":51}
+{"fn":"HoursAngle","args":[0,2147483647],"ok":1073741823.5}
+{"fn":"HoursAngle","args":[2,2],"ok":61}
+{"fn":"HoursAngle","args":[-100,2147483647],"ok":1073741703.5}
+{"fn":"HoursAngle","args":[2147483647,2147483647],"ok":1073742033.5}
+{"fn":"HoursAngle","args":[2,0],"ok":60}
+{"fn":"HoursAngle","args":[-100,-2147483648],"ok":-1073741944}
+{"fn":"HoursAngle","args":[100,42],"ok":141}
+{"fn":"HoursAngle","args":[-2147483648,42],"ok":-219}
+{"fn":"HoursAngle","args":[-100,100],"ok":-69.99999999999999}
+{"fn":"HoursAngle","args":[2147483647,255],"ok":337.5}
+{"fn":"HoursAngle","args":[2147483647,42],"ok":231}
+{"fn":"HoursAngle","args":[-1,0],"ok":-30}
+{"fn":"HoursAngle","args":[0,1],"ok":0.5}
+{"fn":"HoursAngle","args":[0,7],"ok":3.5}
+{"fn":"HoursAngle","args":[-1,-100],"ok":-80.00000000000001}
+{"fn":"HoursAngle","args":[-1,2147483647],"ok":1073741793.5}
+{"fn":"HoursAngle","args":[100,7],"ok":123.49999999999999}
+{"fn":"HoursAngle","args":[1,1],"ok":30.5}
+{"fn":"HoursAngle","args":[7,2147483647],"ok":1073742033.5}
+{"fn":"HoursAngle","args":[-2147483648,-1],"ok":-240.50000000000003}
+{"fn":"HoursAngle","args":[-1,-1],"ok":-30.5}
+{"fn":"HoursAngle","args":[255,7],"ok":93.5}
+{"fn":"HoursAngle","args":[100,255],"ok":247.5}
+{"fn":"HoursAngle","args":[-1,7],"ok":-26.5}
+{"fn":"HoursAngle","args":[7,-2147483648],"ok":-1073741614}
+{"fn":"HoursAngle","args":[100,1],"ok":120.5}
+{"fn":"HoursAngle","args":[-100,1],"ok":-119.5}
+{"fn":"HoursAngle","args":[1,7],"ok":33.5}
+{"fn":"HoursAngle","args":[7,255],"ok":337.5}
+{"fn":"HoursAngle","args":[-100,255],"ok":7.5}
+{"fn":"HoursAngle","args":[42,100],"ok":230}
+{"fn":"HoursAngle","args":[7,100],"ok":260}
+{"fn":"HoursAngle","args":[2,-100],"ok":9.999999999999998}
+{"fn":"HoursAngle","args":[0,-2147483648],"ok":-1073741824}
+{"fn":"HoursAngle","args":[255,-1],"ok":89.5}
+{"fn":"HoursAngle","args":[1,-100],"ok":-20.000000000000004}
+{"fn":"HoursAngle","args":[255,2],"ok":91}
+{"fn":"HoursAngle","args":[2,-2147483648],"ok":-1073741764}
+{"fn":"HoursAngle","args":[255,0],"ok":90}
+{"fn":"HoursAngle","args":[-2147483648,2],"ok":-239}
+{"fn":"HoursAngle","args":[2,-1],"ok":59.5}
+{"fn":"HoursAngle","args":[1,2],"ok":31.000000000000004}
+{"fn":"HoursAngle","args":[100,0],"ok":120}
+{"fn":"HoursAngle","args":[2147483647,0],"ok":210}
+{"fn":"HoursAngle","args":[100,2],"ok":121}
+{"fn":"HoursAngle","args":[100,-2147483648],"ok":-1073741704}
+{"fn":"HoursAngle","args":[-100,0],"ok":-120}
+{"fn":"HoursAngle","args":[1,255],"ok":157.5}
+{"fn":"HoursAngle","args":[42,1],"ok":180.5}
+{"fn":"HoursAngle","args":[7,7],"ok":213.5}
+{"fn":"HoursAngle","args":[-2147483648,7],"ok":-236.5}
+{"fn":"HoursAngle","args":[2147483647,1],"ok":210.5}
+{"fn":"HoursAngle","args":[0,-100],"ok":-50}
+{"fn":"HoursAngle","args":[0,0],"ok":0}
+{"fn":"HoursAngle","args":[7,-1],"ok":209.5}
+{"fn":"HoursAngle","args":[-2147483648,1],"ok":-239.5}
+{"fn":"HoursAngle","args":[0,100],"ok":50}
+{"fn":"HoursAngle","args":[7,42],"ok":231}
+{"fn":"HoursAngle","args":[42,7],"ok":183.5}
+{"fn":"HoursAngle","args":[42,42],"ok":201}
+{"fn":"HoursAngle","args":[-1,2],"ok":-29}
+{"fn":"HoursAngle","args":[1,-1],"ok":29.5}
+{"fn":"HoursAngle","args":[0,-1],"ok":-0.5}
+{"fn":"HoursAngle","args":[7,2],"ok":211}
+{"fn":"HoursAngle","args":[2,42],"ok":81}
+{"fn":"HoursAngle","args":[2147483647,2],"ok":211}
+{"fn":"HoursAngle","args":[42,0],"ok":180}
+{"fn":"HoursAngle","args":[7,1],"ok":210.5}
+{"fn":"HoursAngle","args":[-2147483648,100],"ok":-190}
+{"fn":"HoursAngle","args":[-1,42],"ok":-9.000000000000002}
+{"fn":"HoursAngle","args":[255,42],"ok":111}
+{"fn":"HoursAngle","args":[-100,2],"ok":-119}
+{"fn":"HoursAngle","args":[2147483647,7],"ok":213.5}
+{"fn":"HoursAngle","args":[2147483647,100],"ok":260}
+{"fn":"HoursAngle","args":[-100,-100],"ok":-170}
+{"fn":"HoursAngle","args":[-1,255],"ok":97.5}
+{"fn":"HoursAngle","args":[-2147483648,255],"ok":-112.5}
+{"fn":"HoursAngle","args":[2,7],"ok":63.5}
+{"fn":"HoursAngle","args":[-2147483648,-2147483648],"ok":-1073742064}
+{"fn":"HoursAngle","args":[42,2],"ok":181}
+{"fn":"HoursAngle","args":[100,100],"ok":170}
+{"fn":"HoursAngle","args":[-100,-1],"ok":-120.5}
+{"fn":"HoursAngle","args":[2147483647,-2147483648],"ok":-1073741614}
+{"fn":"HoursAngle","args":[1,2147483647],"ok":1073741853.5}
+{"fn":"HoursAngle","args":[2147483647,-100],"ok":160}
+{"fn":"HoursAngle","args":[100,-1],"ok":119.5}
+{"fn":"HoursAngle","args":[255,1],"ok":90.5}
+{"fn":"HoursAngle","args":[2,255],"ok":187.5}
+{"fn":"HoursAngle","args":[255,-2147483648],"ok":-1073741734}
+{"fn":"HoursAngle","args":[42,-2147483648],"ok":-1073741644}
+{"fn":"HoursAngle","args":[-1,100],"ok":20.000000000000004}
+{"fn":"HoursAngle","args":[-1,-2147483648],"ok":-1073741854}
+{"fn":"HoursAngle","args":[1,100],"ok":80.00000000000001}
+{"fn":"HoursAngle","args":[-100,42],"ok":-99}
+{"fn":"HoursAngle","args":[2,2147483647],"ok":1073741883.5}
+{"fn":"HoursAngle","args":[-2147483648,-100],"ok":-290}
+{"fn":"HoursAngle","args":[-100,7],"ok":-116.5}
+{"fn":"HoursAngle","args":[-2147483648,0],"ok":-240}
+{"fn":"HoursAngle","args":[255,255],"ok":217.5}
+{"fn":"HoursAngle","args":[-7,-1],"ok":-210.5}
+{"fn":"HoursAngle","args":[42,-7],"ok":176.5}
+{"fn":"ClockHandEndY","args":[-2147483648],"ok":-2147483228}
+{"fn":"ClockHandEndY","args":[1],"ok":419}
+{"fn":"ClockHandEndY","args":[-1],"ok":421}
+{"fn":"ClockHandEndY","args":[255],"ok":165}
+{"fn":"ClockHandEndY","args":[7],"ok":413}
+{"fn":"ClockHandEndY","args":[2],"ok":418}
+{"fn":"ClockHandEndY","args":[100],"ok":320}
+{"fn":"ClockHandEndY","args":[0],"ok":420}
+{"fn":"ClockHandEndY","args":[-100],"ok":520}
+{"fn":"ClockHandEndY","args":[2147483647],"ok":-2147483227}
+{"fn":"ClockHandEndY","args":[42],"ok":378}
+{"fn":"ClockHandEndY","args":[-7],"ok":427}
+{"fn":"ClockHandPath","args":[2],"ok":"M 500,420 V 418"}
+{"fn":"ClockHandPath","args":[1],"ok":"M 500,420 V 419"}
+{"fn":"ClockHandPath","args":[255],"ok":"M 500,420 V 165"}
+{"fn":"ClockHandPath","args":[-2147483648],"ok":"M 500,420 V -2147483228"}
+{"fn":"ClockHandPath","args":[7],"ok":"M 500,420 V 413"}
+{"fn":"ClockHandPath","args":[42],"ok":"M 500,420 V 378"}
+{"fn":"ClockHandPath","args":[-1],"ok":"M 500,420 V 421"}
+{"fn":"ClockHandPath","args":[0],"ok":"M 500,420 V 420"}
+{"fn":"ClockHandPath","args":[2147483647],"ok":"M 500,420 V -2147483227"}
+{"fn":"ClockHandPath","args":[100],"ok":"M 500,420 V 320"}
+{"fn":"ClockHandPath","args":[-100],"ok":"M 500,420 V 520"}
+{"fn":"ClockHandPath","args":[-7],"ok":"M 500,420 V 427"}
+{"fn":"WorldIsWideLayout","args":[100.0,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[-1.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,3.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[2.0,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,2.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[10.0,2.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[0.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,2.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[0.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,3.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,0.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,1000.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,2147483648.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[42.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,1.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,2.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[0.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,2.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[1000.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[-2.5,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[1000000.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},2.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},1000.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},42.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},3.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[2.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},0.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,100.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,42.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[3.0,100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,42.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,2.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,1000.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,1000000.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[-2.5,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,2.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},0.5],"ok":true}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,-2.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},2.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,3.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[3.0,3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,1.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[1.0,42.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,1.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[10.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[42.0,42.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[3.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,42.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"Infinity"},1000000.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[42.0,2.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[9007199254740992.0,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,3.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2147483648.0,3.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[2.0,42.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-1.0,-1.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,{"$num":"NaN"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.0,{"$num":"Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000.0,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[10.0,9007199254740992.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.5,1000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"NaN"},{"$num":"-0"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.0,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-Infinity"},1000000.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1000000.0,42.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[0.0,2147483648.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,{"$num":"-Infinity"}],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},100.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[{"$num":"-0"},0.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-2.5,0.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[-7.5,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.1,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[0.30000000000000004,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1e+21,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[1e-7,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[5e-324,10.0],"ok":false}
+{"fn":"WorldIsWideLayout","args":[1.7976931348623157e+308,10.0],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,-7.5],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,0.1],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,0.30000000000000004],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,1e+21],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,1e-7],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,5e-324],"ok":true}
+{"fn":"WorldIsWideLayout","args":[100.0,1.7976931348623157e+308],"ok":false}
+{"fn":"WorldIsWideLayout","args":[100.0,9007199254740992.0],"ok":false}
+{"fn":"CityFullName","args":["a..bns:key.path"],"ok":"a..bns:key.path"}
+{"fn":"CityFullName","args":["é"],"ok":"é"}
+{"fn":"CityFullName","args":["ünïcödé"],"ok":"ünïcödé"}
+{"fn":"CityFullName","args":["{name} has {count} items"],"ok":"{name} has {count} items"}
+{"fn":"CityFullName","args":[".leading"],"ok":".leading"}
+{"fn":"CityFullName","args":["  padded  "],"ok":"  padded  "}
+{"fn":"CityFullName","args":["a.b.c"],"ok":"a.b.c"}
+{"fn":"CityFullName","args":["./x/**/*.json:"],"ok":"./x/**/*.json:"}
+{"fn":"CityFullName","args":["Hello WorldHello World"],"ok":"Hello WorldHello World"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00b\uD83D\uDE00c"],"ok":"a\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["ab"],"ok":"ab"}
+{"fn":"CityFullName","args":["\uD83D\uDE00"],"ok":"\uD83D\uDE00"}
+{"fn":"CityFullName","args":["İstanbul"],"ok":"İstanbul"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣ"],"ok":"ΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":[""],"ok":""}
+{"fn":"CityFullName","args":[":"],"ok":":"}
+{"fn":"CityFullName","args":["./x/**/*.json"],"ok":"./x/**/*.json"}
+{"fn":"CityFullName","args":["abkey_name-1"],"ok":"abkey_name-1"}
+{"fn":"CityFullName","args":["a"],"ok":"a"}
+{"fn":"CityFullName","args":["a:b:csrc/a/b.ts"],"ok":"a:b:csrc/a/b.ts"}
+{"fn":"CityFullName","args":["abc"],"ok":"abc"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mix"}
+{"fn":"CityFullName","args":["akey_name-1"],"ok":"akey_name-1"}
+{"fn":"CityFullName","args":["Hello Worldkey_name-1"],"ok":"Hello Worldkey_name-1"}
+{"fn":"CityFullName","args":["ns:key.path"],"ok":"ns:key.path"}
+{"fn":"CityFullName","args":["line1\nline2"],"ok":"line1\nline2"}
+{"fn":"CityFullName","args":["hello"],"ok":"hello"}
+{"fn":"CityFullName","args":["a..b"],"ok":"a..b"}
+{"fn":"CityFullName","args":["straße"],"ok":"straße"}
+{"fn":"CityFullName","args":["a..bkey_name-1"],"ok":"a..bkey_name-1"}
+{"fn":"CityFullName","args":["  padded  日本語のテキスト"],"ok":"  padded  日本語のテキスト"}
+{"fn":"CityFullName","args":["HELLO"],"ok":"HELLO"}
+{"fn":"CityFullName","args":["日本語のテキスト"],"ok":"日本語のテキスト"}
+{"fn":"CityFullName","args":["\uD83D\uDE00emoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"\uD83D\uDE00emoji \uD83D\uDC4D\uD83C\uDFFD mix"}
+{"fn":"CityFullName","args":["HELLOabc"],"ok":"HELLOabc"}
+{"fn":"CityFullName","args":["Hello World"],"ok":"Hello World"}
+{"fn":"CityFullName","args":["key_name-1"],"ok":"key_name-1"}
+{"fn":"CityFullName","args":["\uFEFFbom"],"ok":"\uFEFFbom"}
+{"fn":"CityFullName","args":["hello world"],"ok":"hello world"}
+{"fn":"CityFullName","args":["line1\nline2\uD83D\uDE00"],"ok":"line1\nline2\uD83D\uDE00"}
+{"fn":"CityFullName","args":["日本語のテキストΣΊΣΥΦΟΣ"],"ok":"日本語のテキストΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":[":./x/**/*.json"],"ok":":./x/**/*.json"}
+{"fn":"CityFullName","args":[".leadingns:key.path"],"ok":".leadingns:key.path"}
+{"fn":"CityFullName","args":["src/a/b.ts"],"ok":"src/a/b.ts"}
+{"fn":"CityFullName","args":["key_name-1Hello World"],"ok":"key_name-1Hello World"}
+{"fn":"CityFullName","args":["abca.b.c"],"ok":"abca.b.c"}
+{"fn":"CityFullName","args":["abcΣΊΣΥΦΟΣ"],"ok":"abcΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["trailing."],"ok":"trailing."}
+{"fn":"CityFullName","args":["éhello"],"ok":"éhello"}
+{"fn":"CityFullName","args":["Hello Worldsrc/a/b.ts"],"ok":"Hello Worldsrc/a/b.ts"}
+{"fn":"CityFullName","args":["hello world\uD83D\uDE00"],"ok":"hello world\uD83D\uDE00"}
+{"fn":"CityFullName","args":["ünïcödéΣΊΣΥΦΟΣ"],"ok":"ünïcödéΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["日本語のテキスト./x/**/*.json"],"ok":"日本語のテキスト./x/**/*.json"}
+{"fn":"CityFullName","args":["hello日本語のテキスト"],"ok":"hello日本語のテキスト"}
+{"fn":"CityFullName","args":["tab\tseparated"],"ok":"tab\tseparated"}
+{"fn":"CityFullName","args":["a..b  padded  "],"ok":"a..b  padded  "}
+{"fn":"CityFullName","args":["ns:key.pathab"],"ok":"ns:key.pathab"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixns:key.path"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixns:key.path"}
+{"fn":"CityFullName","args":["ns:key.pathemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"ns:key.pathemoji \uD83D\uDC4D\uD83C\uDFFD mix"}
+{"fn":"CityFullName","args":["abc\uFEFFbom"],"ok":"abc\uFEFFbom"}
+{"fn":"CityFullName","args":["İstanbultab\tseparated"],"ok":"İstanbultab\tseparated"}
+{"fn":"CityFullName","args":["straße.leading"],"ok":"straße.leading"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣ.leading"],"ok":"ΣΊΣΥΦΟΣ.leading"}
+{"fn":"CityFullName","args":["a.b.c  padded  "],"ok":"a.b.c  padded  "}
+{"fn":"CityFullName","args":["{name} has {count} itemstrailing."],"ok":"{name} has {count} itemstrailing."}
+{"fn":"CityFullName","args":["日本語のテキストa:b:c"],"ok":"日本語のテキストa:b:c"}
+{"fn":"CityFullName","args":["key_name-1a\uD83D\uDE00b\uD83D\uDE00c"],"ok":"key_name-1a\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixline1\nline2"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixline1\nline2"}
+{"fn":"CityFullName","args":["a:b:c"],"ok":"a:b:c"}
+{"fn":"CityFullName","args":["a:b:ctab\tseparated"],"ok":"a:b:ctab\tseparated"}
+{"fn":"CityFullName","args":["abhello world"],"ok":"abhello world"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00b\uD83D\uDE00ca:b:c"],"ok":"a\uD83D\uDE00b\uD83D\uDE00ca:b:c"}
+{"fn":"CityFullName","args":["a..b:"],"ok":"a..b:"}
+{"fn":"CityFullName","args":["\uD83D\uDE00a.b.c"],"ok":"\uD83D\uDE00a.b.c"}
+{"fn":"CityFullName","args":["\uD83D\uDE00line1\nline2"],"ok":"\uD83D\uDE00line1\nline2"}
+{"fn":"CityFullName","args":[":hello world"],"ok":":hello world"}
+{"fn":"CityFullName","args":["ünïcödé\uD83D\uDE00"],"ok":"ünïcödé\uD83D\uDE00"}
+{"fn":"CityFullName","args":["  padded  a..b"],"ok":"  padded  a..b"}
+{"fn":"CityFullName","args":["a..btab\tseparated"],"ok":"a..btab\tseparated"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣtab\tseparated"],"ok":"ΣΊΣΥΦΟΣtab\tseparated"}
+{"fn":"CityFullName","args":["a.b.cHello World"],"ok":"a.b.cHello World"}
+{"fn":"CityFullName","args":["Hello Worlda.b.c"],"ok":"Hello Worlda.b.c"}
+{"fn":"CityFullName","args":["src/a/b.tsΣΊΣΥΦΟΣ"],"ok":"src/a/b.tsΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣ  padded  "],"ok":"ΣΊΣΥΦΟΣ  padded  "}
+{"fn":"CityFullName","args":["straßeünïcödé"],"ok":"straßeünïcödé"}
+{"fn":"CityFullName","args":["abca"],"ok":"abca"}
+{"fn":"CityFullName","args":["a:b:cHELLO"],"ok":"a:b:cHELLO"}
+{"fn":"CityFullName","args":["tab\tseparatedhello"],"ok":"tab\tseparatedhello"}
+{"fn":"CityFullName","args":["HELLO  padded  "],"ok":"HELLO  padded  "}
+{"fn":"CityFullName","args":["ünïcödéHELLO"],"ok":"ünïcödéHELLO"}
+{"fn":"CityFullName","args":["ünïcödéünïcödé"],"ok":"ünïcödéünïcödé"}
+{"fn":"CityFullName","args":["trailing.line1\nline2"],"ok":"trailing.line1\nline2"}
+{"fn":"CityFullName","args":["key_name-1ünïcödé"],"ok":"key_name-1ünïcödé"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixHello World"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixHello World"}
+{"fn":"CityFullName","args":["abc:"],"ok":"abc:"}
+{"fn":"CityFullName","args":["abc  padded  "],"ok":"abc  padded  "}
+{"fn":"CityFullName","args":["{name} has {count} itemsünïcödé"],"ok":"{name} has {count} itemsünïcödé"}
+{"fn":"CityFullName","args":["src/a/b.tsline1\nline2"],"ok":"src/a/b.tsline1\nline2"}
+{"fn":"CityFullName","args":["line1\nline2\uFEFFbom"],"ok":"line1\nline2\uFEFFbom"}
+{"fn":"CityFullName","args":["Hello Worlda"],"ok":"Hello Worlda"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣhello world"],"ok":"ΣΊΣΥΦΟΣhello world"}
+{"fn":"CityFullName","args":["ns:key.path\uFEFFbom"],"ok":"ns:key.path\uFEFFbom"}
+{"fn":"CityFullName","args":["./x/**/*.jsonkey_name-1"],"ok":"./x/**/*.jsonkey_name-1"}
+{"fn":"CityFullName","args":["a:b:c日本語のテキスト"],"ok":"a:b:c日本語のテキスト"}
+{"fn":"CityFullName","args":[":Hello World"],"ok":":Hello World"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00b\uD83D\uDE00c:"],"ok":"a\uD83D\uDE00b\uD83D\uDE00c:"}
+{"fn":"CityFullName","args":["line1\nline2a"],"ok":"line1\nline2a"}
+{"fn":"CityFullName","args":["a:b:ckey_name-1"],"ok":"a:b:ckey_name-1"}
+{"fn":"CityFullName","args":["trailing.\uFEFFbom"],"ok":"trailing.\uFEFFbom"}
+{"fn":"CityFullName","args":["éns:key.path"],"ok":"éns:key.path"}
+{"fn":"CityFullName","args":["HELLOtrailing."],"ok":"HELLOtrailing."}
+{"fn":"CityFullName","args":["ünïcödéhello world"],"ok":"ünïcödéhello world"}
+{"fn":"CityFullName","args":["İstanbul  padded  "],"ok":"İstanbul  padded  "}
+{"fn":"CityFullName","args":["a日本語のテキスト"],"ok":"a日本語のテキスト"}
+{"fn":"CityFullName","args":["ns:key.pathHELLO"],"ok":"ns:key.pathHELLO"}
+{"fn":"CityFullName","args":["{name} has {count} itemsa"],"ok":"{name} has {count} itemsa"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣsrc/a/b.ts"],"ok":"ΣΊΣΥΦΟΣsrc/a/b.ts"}
+{"fn":"CityFullName","args":["tab\tseparated日本語のテキスト"],"ok":"tab\tseparated日本語のテキスト"}
+{"fn":"CityFullName","args":["ns:key.path:"],"ok":"ns:key.path:"}
+{"fn":"CityFullName","args":["a..bΣΊΣΥΦΟΣ"],"ok":"a..bΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["trailing.key_name-1"],"ok":"trailing.key_name-1"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00"],"ok":"a\uD83D\uDE00"}
+{"fn":"CityFullName","args":["\uFEFFbom.leading"],"ok":"\uFEFFbom.leading"}
+{"fn":"CityFullName","args":["line1\nline2ns:key.path"],"ok":"line1\nline2ns:key.path"}
+{"fn":"CityFullName","args":[":hello"],"ok":":hello"}
+{"fn":"CityFullName","args":["{name} has {count} items:"],"ok":"{name} has {count} items:"}
+{"fn":"CityFullName","args":["  padded  key_name-1"],"ok":"  padded  key_name-1"}
+{"fn":"CityFullName","args":["tab\tseparatedΣΊΣΥΦΟΣ"],"ok":"tab\tseparatedΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":[".leading\uFEFFbom"],"ok":".leading\uFEFFbom"}
+{"fn":"CityFullName","args":[".leadingtrailing."],"ok":".leadingtrailing."}
+{"fn":"CityFullName","args":["a.b.cab"],"ok":"a.b.cab"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixab"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixab"}
+{"fn":"CityFullName","args":["a.b.cΣΊΣΥΦΟΣ"],"ok":"a.b.cΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["ab./x/**/*.json"],"ok":"ab./x/**/*.json"}
+{"fn":"CityFullName","args":["HELLO:"],"ok":"HELLO:"}
+{"fn":"CityFullName","args":["src/a/b.tsa..b"],"ok":"src/a/b.tsa..b"}
+{"fn":"CityFullName","args":["line1\nline2HELLO"],"ok":"line1\nline2HELLO"}
+{"fn":"CityFullName","args":["abckey_name-1"],"ok":"abckey_name-1"}
+{"fn":"CityFullName","args":["aHello World"],"ok":"aHello World"}
+{"fn":"CityFullName","args":["HELLOa\uD83D\uDE00b\uD83D\uDE00c"],"ok":"HELLOa\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣé"],"ok":"ΣΊΣΥΦΟΣé"}
+{"fn":"CityFullName","args":["key_name-1line1\nline2"],"ok":"key_name-1line1\nline2"}
+{"fn":"CityFullName","args":[":trailing."],"ok":":trailing."}
+{"fn":"CityFullName","args":["日本語のテキスト:"],"ok":"日本語のテキスト:"}
+{"fn":"CityFullName","args":["a..b\uFEFFbom"],"ok":"a..b\uFEFFbom"}
+{"fn":"CityFullName","args":["abHello World"],"ok":"abHello World"}
+{"fn":"CityFullName","args":["a..bab"],"ok":"a..bab"}
+{"fn":"CityFullName","args":[":ünïcödé"],"ok":":ünïcödé"}
+{"fn":"CityFullName","args":["a..ba:b:c"],"ok":"a..ba:b:c"}
+{"fn":"CityFullName","args":[".leadinga\uD83D\uDE00b\uD83D\uDE00c"],"ok":".leadinga\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["trailing.a\uD83D\uDE00b\uD83D\uDE00c"],"ok":"trailing.a\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["éHello World"],"ok":"éHello World"}
+{"fn":"CityFullName","args":[".leadingabc"],"ok":".leadingabc"}
+{"fn":"CityFullName","args":["\uD83D\uDE00{name} has {count} items"],"ok":"\uD83D\uDE00{name} has {count} items"}
+{"fn":"CityFullName","args":["İstanbulstraße"],"ok":"İstanbulstraße"}
+{"fn":"CityFullName","args":["\uD83D\uDE00ΣΊΣΥΦΟΣ"],"ok":"\uD83D\uDE00ΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00b\uD83D\uDE00ctab\tseparated"],"ok":"a\uD83D\uDE00b\uD83D\uDE00ctab\tseparated"}
+{"fn":"CityFullName","args":["hello worldΣΊΣΥΦΟΣ"],"ok":"hello worldΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["İstanbul日本語のテキスト"],"ok":"İstanbul日本語のテキスト"}
+{"fn":"CityFullName","args":["İstanbul{name} has {count} items"],"ok":"İstanbul{name} has {count} items"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixtab\tseparated"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixtab\tseparated"}
+{"fn":"CityFullName","args":["{name} has {count} itemsns:key.path"],"ok":"{name} has {count} itemsns:key.path"}
+{"fn":"CityFullName","args":["tab\tseparatedHello World"],"ok":"tab\tseparatedHello World"}
+{"fn":"CityFullName","args":["aba.b.c"],"ok":"aba.b.c"}
+{"fn":"CityFullName","args":["ΣΊΣΥΦΟΣabc"],"ok":"ΣΊΣΥΦΟΣabc"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixHELLO"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mixHELLO"}
+{"fn":"CityFullName","args":["aa"],"ok":"aa"}
+{"fn":"CityFullName","args":[".leading\uD83D\uDE00"],"ok":".leading\uD83D\uDE00"}
+{"fn":"CityFullName","args":["abca\uD83D\uDE00b\uD83D\uDE00c"],"ok":"abca\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityFullName","args":["./x/**/*.jsona.b.c"],"ok":"./x/**/*.jsona.b.c"}
+{"fn":"CityFullName","args":["src/a/b.ts.leading"],"ok":"src/a/b.ts.leading"}
+{"fn":"CityFullName","args":["\uFEFFboma.b.c"],"ok":"\uFEFFboma.b.c"}
+{"fn":"CityFullName","args":["./x/**/*.json./x/**/*.json"],"ok":"./x/**/*.json./x/**/*.json"}
+{"fn":"CityFullName","args":["abcsrc/a/b.ts"],"ok":"abcsrc/a/b.ts"}
+{"fn":"CityFullName","args":["İstanbulΣΊΣΥΦΟΣ"],"ok":"İstanbulΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["hello worldİstanbul"],"ok":"hello worldİstanbul"}
+{"fn":"CityFullName","args":["a.b.c{name} has {count} items"],"ok":"a.b.c{name} has {count} items"}
+{"fn":"CityFullName","args":["key_name-1:"],"ok":"key_name-1:"}
+{"fn":"CityFullName","args":["Hello Worldtab\tseparated"],"ok":"Hello Worldtab\tseparated"}
+{"fn":"CityFullName","args":["a.b.ca"],"ok":"a.b.ca"}
+{"fn":"CityFullName","args":["ns:key.path.leading"],"ok":"ns:key.path.leading"}
+{"fn":"CityFullName","args":["a:b:ca"],"ok":"a:b:ca"}
+{"fn":"CityFullName","args":["straßeé"],"ok":"straßeé"}
+{"fn":"CityFullName","args":["é日本語のテキスト"],"ok":"é日本語のテキスト"}
+{"fn":"CityFullName","args":["Hello Worldünïcödé"],"ok":"Hello Worldünïcödé"}
+{"fn":"CityFullName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix.leading"],"ok":"emoji \uD83D\uDC4D\uD83C\uDFFD mix.leading"}
+{"fn":"CityFullName","args":["ünïcödéa.b.c"],"ok":"ünïcödéa.b.c"}
+{"fn":"CityFullName","args":[":HELLO"],"ok":":HELLO"}
+{"fn":"CityFullName","args":["./x/**/*.jsonemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"./x/**/*.jsonemoji \uD83D\uDC4D\uD83C\uDFFD mix"}
+{"fn":"CityFullName","args":[":.leading"],"ok":":.leading"}
+{"fn":"CityFullName","args":["straße{name} has {count} items"],"ok":"straße{name} has {count} items"}
+{"fn":"CityFullName","args":["helloemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"helloemoji \uD83D\uDC4D\uD83C\uDFFD mix"}
+{"fn":"CityFullName","args":["Hello Worlda..b"],"ok":"Hello Worlda..b"}
+{"fn":"CityFullName","args":["abcHELLO"],"ok":"abcHELLO"}
+{"fn":"CityFullName","args":["a:b:cΣΊΣΥΦΟΣ"],"ok":"a:b:cΣΊΣΥΦΟΣ"}
+{"fn":"CityFullName","args":["trailing.ns:key.path"],"ok":"trailing.ns:key.path"}
+{"fn":"CityFullName","args":["aab"],"ok":"aab"}
+{"fn":"CityFullName","args":["src/a/b.tsa"],"ok":"src/a/b.tsa"}
+{"fn":"CityFullName","args":["line1\nline2trailing."],"ok":"line1\nline2trailing."}
+{"fn":"CityFullName","args":[":{name} has {count} items"],"ok":":{name} has {count} items"}
+{"fn":"CityFullName","args":["héllo wörld"],"ok":"héllo wörld"}
+{"fn":"CityFullName","args":["\uD83D\uDC4D\uD83C\uDFFD thumbs"],"ok":"\uD83D\uDC4D\uD83C\uDFFD thumbs"}
+{"fn":"CityFullName","args":["日本語"],"ok":"日本語"}
+{"fn":"CityFullName","args":["ılık ırmak"],"ok":"ılık ırmak"}
+{"fn":"CityFullName","args":["\uD83D\uDC68‍\uD83D\uDC69‍\uD83D\uDC67 family"],"ok":"\uD83D\uDC68‍\uD83D\uDC69‍\uD83D\uDC67 family"}
+{"fn":"CityFullName","args":["a\u00A0b"],"ok":"a\u00A0b"}
+{"fn":"CityFullName","args":["a\uD83D\uDE00b"],"ok":"a\uD83D\uDE00b"}
+{"fn":"CityFullName","args":["a²b x½ y①"],"ok":"a²b x½ y①"}
+{"fn":"CityFullName","args":["aⅠb Ⅻ"],"ok":"aⅠb Ⅻ"}
+{"fn":"CityFullName","args":["a\uD801\uDC00b \uD835\uDC00bc"],"ok":"a\uD801\uDC00b \uD835\uDC00bc"}
+{"fn":"CityFullName","args":["कि ٣٤"],"ok":"कि ٣٤"}
+{"fn":"CityShortName","args":["helloemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"helloemoj…"}
+{"fn":"CityShortName","args":["src/a/b.ts"],"ok":"src/a/b.ts"}
+{"fn":"CityShortName","args":["line1\nline2"],"ok":"line1\nline2"}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣ"],"ok":"ΣΊΣΥΦΟΣ"}
+{"fn":"CityShortName","args":["\uFEFFbom"],"ok":"\uFEFFbom"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b\uD83D\uDE00c"],"ok":"a\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityShortName","args":["ns:key.path"],"ok":"ns:key.path"}
+{"fn":"CityShortName","args":["a.b.c{name} has {count} items"],"ok":"a.b.c{nam…"}
+{"fn":"CityShortName","args":["straße"],"ok":"straße"}
+{"fn":"CityShortName","args":["İstanbul"],"ok":"İstanbul"}
+{"fn":"CityShortName","args":["ab"],"ok":"ab"}
+{"fn":"CityShortName","args":["straßestraße"],"ok":"straßestr…"}
+{"fn":"CityShortName","args":["a..ba"],"ok":"a..ba"}
+{"fn":"CityShortName","args":[""],"ok":""}
+{"fn":"CityShortName","args":["hello world"],"ok":"hello world"}
+{"fn":"CityShortName","args":["  padded  "],"ok":"  padded  "}
+{"fn":"CityShortName","args":["HELLO"],"ok":"HELLO"}
+{"fn":"CityShortName","args":[".leading"],"ok":".leading"}
+{"fn":"CityShortName","args":["hello"],"ok":"hello"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["a..b"],"ok":"a..b"}
+{"fn":"CityShortName","args":["ab:"],"ok":"ab:"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixa.b.c"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["abc"],"ok":"abc"}
+{"fn":"CityShortName","args":["key_name-1"],"ok":"key_name-1"}
+{"fn":"CityShortName","args":["key_name-1emoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"key_name-…"}
+{"fn":"CityShortName","args":["Hello World"],"ok":"Hello World"}
+{"fn":"CityShortName","args":["a:b:c日本語のテキスト"],"ok":"a:b:c日本語の…"}
+{"fn":"CityShortName","args":["{name} has {count} itemsünïcödé"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixstraße"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["hello worldHELLO"],"ok":"hello wor…"}
+{"fn":"CityShortName","args":["./x/**/*.json"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["a:b:c"],"ok":"a:b:c"}
+{"fn":"CityShortName","args":["a.b.c"],"ok":"a.b.c"}
+{"fn":"CityShortName","args":[":"],"ok":":"}
+{"fn":"CityShortName","args":["a"],"ok":"a"}
+{"fn":"CityShortName","args":["日本語のテキストline1\nline2"],"ok":"日本語のテキストl…"}
+{"fn":"CityShortName","args":["{name} has {count} items"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["é\uFEFFbom"],"ok":"é\uFEFFbom"}
+{"fn":"CityShortName","args":["tab\tseparated"],"ok":"tab\tsepar…"}
+{"fn":"CityShortName","args":["ns:key.pathline1\nline2"],"ok":"ns:key.pa…"}
+{"fn":"CityShortName","args":["ünïcödé"],"ok":"ünïcödé"}
+{"fn":"CityShortName","args":["日本語のテキスト"],"ok":"日本語のテキスト"}
+{"fn":"CityShortName","args":[".leadingkey_name-1"],"ok":".leadingk…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix日本語のテキスト"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣ\uD83D\uDE00"],"ok":"ΣΊΣΥΦΟΣ\uD83D\uDE00"}
+{"fn":"CityShortName","args":[":a..b"],"ok":":a..b"}
+{"fn":"CityShortName","args":["./x/**/*.jsonsrc/a/b.ts"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":[":HELLO"],"ok":":HELLO"}
+{"fn":"CityShortName","args":["trailing.\uD83D\uDE00"],"ok":"trailing.\uD83D\uDE00"}
+{"fn":"CityShortName","args":["é"],"ok":"é"}
+{"fn":"CityShortName","args":["a..b.leading"],"ok":"a..b.lead…"}
+{"fn":"CityShortName","args":["a:b:c./x/**/*.json"],"ok":"a:b:c./x/…"}
+{"fn":"CityShortName","args":["trailing.a:b:c"],"ok":"trailing.…"}
+{"fn":"CityShortName","args":["./x/**/*.jsontab\tseparated"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["Hello Worldsrc/a/b.ts"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["line1\nline2abc"],"ok":"line1\nlin…"}
+{"fn":"CityShortName","args":["trailing."],"ok":"trailing."}
+{"fn":"CityShortName","args":["a:b:cstraße"],"ok":"a:b:cstraße"}
+{"fn":"CityShortName","args":["tab\tseparatedHello World"],"ok":"tab\tsepar…"}
+{"fn":"CityShortName","args":["hellotrailing."],"ok":"hellotrai…"}
+{"fn":"CityShortName","args":["hello worldns:key.path"],"ok":"hello wor…"}
+{"fn":"CityShortName","args":["HELLO./x/**/*.json"],"ok":"HELLO./x/…"}
+{"fn":"CityShortName","args":["a.b.ctab\tseparated"],"ok":"a.b.ctab\t…"}
+{"fn":"CityShortName","args":["ünïcödé.leading"],"ok":"ünïcödé.l…"}
+{"fn":"CityShortName","args":["日本語のテキストa..b"],"ok":"日本語のテキストa…"}
+{"fn":"CityShortName","args":[":\uFEFFbom"],"ok":":\uFEFFbom"}
+{"fn":"CityShortName","args":["a:b:cline1\nline2"],"ok":"a:b:cline…"}
+{"fn":"CityShortName","args":[".leadinga\uD83D\uDE00b\uD83D\uDE00c"],"ok":".leadinga…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixé"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["\uD83D\uDE00"],"ok":"\uD83D\uDE00"}
+{"fn":"CityShortName","args":["abab"],"ok":"abab"}
+{"fn":"CityShortName","args":["\uFEFFboma:b:c"],"ok":"\uFEFFboma:b:c"}
+{"fn":"CityShortName","args":["hello./x/**/*.json"],"ok":"hello./x/…"}
+{"fn":"CityShortName","args":["abc:"],"ok":"abc:"}
+{"fn":"CityShortName","args":["abİstanbul"],"ok":"abİstanbul"}
+{"fn":"CityShortName","args":["./x/**/*.jsonHELLO"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["src/a/b.tsa.b.c"],"ok":"src/a/b.t…"}
+{"fn":"CityShortName","args":["日本語のテキストé"],"ok":"日本語のテキストé"}
+{"fn":"CityShortName","args":["a:b:csrc/a/b.ts"],"ok":"a:b:csrc/…"}
+{"fn":"CityShortName","args":["İstanbula\uD83D\uDE00b\uD83D\uDE00c"],"ok":"İstanbula…"}
+{"fn":"CityShortName","args":["  padded  abc"],"ok":"  padded …"}
+{"fn":"CityShortName","args":["日本語のテキストünïcödé"],"ok":"日本語のテキストü…"}
+{"fn":"CityShortName","args":["straßeHello World"],"ok":"straßeHel…"}
+{"fn":"CityShortName","args":["a:b:cΣΊΣΥΦΟΣ"],"ok":"a:b:cΣΊΣΥ…"}
+{"fn":"CityShortName","args":["trailing.hello"],"ok":"trailing.…"}
+{"fn":"CityShortName","args":["ns:key.pathstraße"],"ok":"ns:key.pa…"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b\uD83D\uDE00cstraße"],"ok":"a\uD83D\uDE00b\uD83D\uDE00cst…"}
+{"fn":"CityShortName","args":["./x/**/*.jsonstraße"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":[":a\uD83D\uDE00b\uD83D\uDE00c"],"ok":":a\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"ΣΊΣΥΦΟΣem…"}
+{"fn":"CityShortName","args":["  padded  tab\tseparated"],"ok":"  padded …"}
+{"fn":"CityShortName","args":["{name} has {count} items.leading"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣns:key.path"],"ok":"ΣΊΣΥΦΟΣns…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix{name} has {count} items"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["a:b:c  padded  "],"ok":"a:b:c  pa…"}
+{"fn":"CityShortName","args":["HELLO:"],"ok":"HELLO:"}
+{"fn":"CityShortName","args":["key_name-1hello world"],"ok":"key_name-…"}
+{"fn":"CityShortName","args":["HELLOa.b.c"],"ok":"HELLOa.b.c"}
+{"fn":"CityShortName","args":["\uD83D\uDE00  padded  "],"ok":"\uD83D\uDE00  padde…"}
+{"fn":"CityShortName","args":["trailing.HELLO"],"ok":"trailing.…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixΣΊΣΥΦΟΣ"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["ünïcödéemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"ünïcödéem…"}
+{"fn":"CityShortName","args":["Hello Worldhello"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["  padded  trailing."],"ok":"  padded …"}
+{"fn":"CityShortName","args":[":ünïcödé"],"ok":":ünïcödé"}
+{"fn":"CityShortName","args":["a:b:cemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"a:b:cemoj…"}
+{"fn":"CityShortName","args":["éline1\nline2"],"ok":"éline1\nl…"}
+{"fn":"CityShortName","args":["Hello World  padded  "],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["a..b:"],"ok":"a..b:"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixa\uD83D\uDE00b\uD83D\uDE00c"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["HELLOstraße"],"ok":"HELLOstraße"}
+{"fn":"CityShortName","args":["İstanbula..b"],"ok":"İstanbula…"}
+{"fn":"CityShortName","args":["hello worlda.b.c"],"ok":"hello wor…"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b\uD83D\uDE00cünïcödé"],"ok":"a\uD83D\uDE00b\uD83D\uDE00cün…"}
+{"fn":"CityShortName","args":["éünïcödé"],"ok":"éünïcödé"}
+{"fn":"CityShortName","args":["tab\tseparated:"],"ok":"tab\tsepar…"}
+{"fn":"CityShortName","args":["hello\uD83D\uDE00"],"ok":"hello\uD83D\uDE00"}
+{"fn":"CityShortName","args":[".leadinga:b:c"],"ok":".leadinga…"}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣ:"],"ok":"ΣΊΣΥΦΟΣ:"}
+{"fn":"CityShortName","args":["aba\uD83D\uDE00b\uD83D\uDE00c"],"ok":"aba\uD83D\uDE00b\uD83D\uDE00c"}
+{"fn":"CityShortName","args":["{name} has {count} itemsns:key.path"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["{name} has {count} itemsa"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["  padded  \uFEFFbom"],"ok":"  padded …"}
+{"fn":"CityShortName","args":["abHello World"],"ok":"abHello W…"}
+{"fn":"CityShortName","args":["a..bab"],"ok":"a..bab"}
+{"fn":"CityShortName","args":["{name} has {count} items./x/**/*.json"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":[".leadingab"],"ok":".leadingab"}
+{"fn":"CityShortName","args":["\uD83D\uDE00\uD83D\uDE00"],"ok":"\uD83D\uDE00\uD83D\uDE00"}
+{"fn":"CityShortName","args":["\uD83D\uDE00trailing."],"ok":"\uD83D\uDE00trailing."}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b\uD83D\uDE00c:"],"ok":"a\uD83D\uDE00b\uD83D\uDE00c:"}
+{"fn":"CityShortName","args":["trailing.tab\tseparated"],"ok":"trailing.…"}
+{"fn":"CityShortName","args":["日本語のテキストΣΊΣΥΦΟΣ"],"ok":"日本語のテキストΣ…"}
+{"fn":"CityShortName","args":["key_name-1İstanbul"],"ok":"key_name-…"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b\uD83D\uDE00cΣΊΣΥΦΟΣ"],"ok":"a\uD83D\uDE00b\uD83D\uDE00cΣΊ…"}
+{"fn":"CityShortName","args":["Hello Worldé"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["a:b:chello"],"ok":"a:b:chello"}
+{"fn":"CityShortName","args":["Hello Worldtab\tseparated"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["{name} has {count} itemsline1\nline2"],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["  padded  日本語のテキスト"],"ok":"  padded …"}
+{"fn":"CityShortName","args":["straßekey_name-1"],"ok":"straßekey…"}
+{"fn":"CityShortName","args":["./x/**/*.json.leading"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["a..ba..b"],"ok":"a..ba..b"}
+{"fn":"CityShortName","args":["a..bline1\nline2"],"ok":"a..bline1…"}
+{"fn":"CityShortName","args":["\uD83D\uDE00a.b.c"],"ok":"\uD83D\uDE00a.b.c"}
+{"fn":"CityShortName","args":["İstanbul\uD83D\uDE00"],"ok":"İstanbul\uD83D\uDE00"}
+{"fn":"CityShortName","args":["hello  padded  "],"ok":"hello  pa…"}
+{"fn":"CityShortName","args":["./x/**/*.jsona\uD83D\uDE00b\uD83D\uDE00c"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["a:b:ckey_name-1"],"ok":"a:b:ckey_…"}
+{"fn":"CityShortName","args":["aba"],"ok":"aba"}
+{"fn":"CityShortName","args":[".leadingemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":".leadinge…"}
+{"fn":"CityShortName","args":["a..bünïcödé"],"ok":"a..bünïcödé"}
+{"fn":"CityShortName","args":["ünïcödéa:b:c"],"ok":"ünïcödéa:…"}
+{"fn":"CityShortName","args":["Hello World\uD83D\uDE00"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["hello worlda\uD83D\uDE00b\uD83D\uDE00c"],"ok":"hello wor…"}
+{"fn":"CityShortName","args":["a..btrailing."],"ok":"a..btrail…"}
+{"fn":"CityShortName","args":["line1\nline2:"],"ok":"line1\nlin…"}
+{"fn":"CityShortName","args":["ünïcödé  padded  "],"ok":"ünïcödé  …"}
+{"fn":"CityShortName","args":["src/a/b.tsab"],"ok":"src/a/b.t…"}
+{"fn":"CityShortName","args":["a..b\uFEFFbom"],"ok":"a..b\uFEFFbom"}
+{"fn":"CityShortName","args":["ns:key.patha\uD83D\uDE00b\uD83D\uDE00c"],"ok":"ns:key.pa…"}
+{"fn":"CityShortName","args":["ΣΊΣΥΦΟΣa..b"],"ok":"ΣΊΣΥΦΟΣa..b"}
+{"fn":"CityShortName","args":["straßeHELLO"],"ok":"straßeHELLO"}
+{"fn":"CityShortName","args":["日本語のテキストa:b:c"],"ok":"日本語のテキストa…"}
+{"fn":"CityShortName","args":["a..bsrc/a/b.ts"],"ok":"a..bsrc/a…"}
+{"fn":"CityShortName","args":["{name} has {count} items  padded  "],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["abhello"],"ok":"abhello"}
+{"fn":"CityShortName","args":["a..bemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":"a..bemoji…"}
+{"fn":"CityShortName","args":["Hello Worlda.b.c"],"ok":"Hello Wor…"}
+{"fn":"CityShortName","args":["a:b:c\uD83D\uDE00"],"ok":"a:b:c\uD83D\uDE00"}
+{"fn":"CityShortName","args":["İstanbul.leading"],"ok":"İstanbul.…"}
+{"fn":"CityShortName","args":["ns:key.patha.b.c"],"ok":"ns:key.pa…"}
+{"fn":"CityShortName","args":["src/a/b.tstrailing."],"ok":"src/a/b.t…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixemoji \uD83D\uDC4D\uD83C\uDFFD mix"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["key_name-1./x/**/*.json"],"ok":"key_name-…"}
+{"fn":"CityShortName","args":["aünïcödé"],"ok":"aünïcödé"}
+{"fn":"CityShortName","args":["straßeab"],"ok":"straßeab"}
+{"fn":"CityShortName","args":["./x/**/*.jsonHello World"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["  padded    padded  "],"ok":"  padded …"}
+{"fn":"CityShortName","args":["hello worldstraße"],"ok":"hello wor…"}
+{"fn":"CityShortName","args":["src/a/b.tsHello World"],"ok":"src/a/b.t…"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixab"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":[".leading\uD83D\uDE00"],"ok":".leading\uD83D\uDE00"}
+{"fn":"CityShortName","args":["trailing.a..b"],"ok":"trailing.…"}
+{"fn":"CityShortName","args":[".leadingünïcödé"],"ok":".leadingü…"}
+{"fn":"CityShortName","args":["\uFEFFbomünïcödé"],"ok":"\uFEFFbomünïcödé"}
+{"fn":"CityShortName","args":["HELLOa"],"ok":"HELLOa"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00"],"ok":"a\uD83D\uDE00"}
+{"fn":"CityShortName","args":["abtrailing."],"ok":"abtrailing."}
+{"fn":"CityShortName","args":["abcabc"],"ok":"abcabc"}
+{"fn":"CityShortName","args":["{name} has {count} itemstrailing."],"ok":"{name} ha…"}
+{"fn":"CityShortName","args":["a.b.c\uD83D\uDE00"],"ok":"a.b.c\uD83D\uDE00"}
+{"fn":"CityShortName","args":["日本語のテキストa"],"ok":"日本語のテキストa"}
+{"fn":"CityShortName","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixhello world"],"ok":{"$utf16":[101,109,111,106,105,32,55357,56397,55356,8230]}}
+{"fn":"CityShortName","args":["key_name-1Hello World"],"ok":"key_name-…"}
+{"fn":"CityShortName","args":["  padded  a.b.c"],"ok":"  padded …"}
+{"fn":"CityShortName","args":["HELLOa:b:c"],"ok":"HELLOa:b:c"}
+{"fn":"CityShortName","args":["helloΣΊΣΥΦΟΣ"],"ok":"helloΣΊΣΥ…"}
+{"fn":"CityShortName","args":["ns:key.pathİstanbul"],"ok":"ns:key.pa…"}
+{"fn":"CityShortName","args":["./x/**/*.json{name} has {count} items"],"ok":"./x/**/*.…"}
+{"fn":"CityShortName","args":["héllo wörld"],"ok":"héllo wörld"}
+{"fn":"CityShortName","args":["\uD83D\uDC4D\uD83C\uDFFD thumbs"],"ok":"\uD83D\uDC4D\uD83C\uDFFD thumbs"}
+{"fn":"CityShortName","args":["日本語"],"ok":"日本語"}
+{"fn":"CityShortName","args":["ılık ırmak"],"ok":"ılık ırmak"}
+{"fn":"CityShortName","args":["\uD83D\uDC68‍\uD83D\uDC69‍\uD83D\uDC67 family"],"ok":"\uD83D\uDC68‍\uD83D\uDC69‍\uD83D\uDC67 …"}
+{"fn":"CityShortName","args":["a\u00A0b"],"ok":"a\u00A0b"}
+{"fn":"CityShortName","args":["a\uD83D\uDE00b"],"ok":"a\uD83D\uDE00b"}
+{"fn":"CityShortName","args":["a²b x½ y①"],"ok":"a²b x½ y①"}
+{"fn":"CityShortName","args":["aⅠb Ⅻ"],"ok":"aⅠb Ⅻ"}
+{"fn":"CityShortName","args":["a\uD801\uDC00b \uD835\uDC00bc"],"ok":"a\uD801\uDC00b \uD835\uDC00bc"}
+{"fn":"CityShortName","args":["कि ٣٤"],"ok":"कि ٣٤"}
+{"fn":"CityAbbreviation","args":["trailing.emoji \uD83D\uDC4D\uD83C\uDFFD mix",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣ",false],"ok":"ΣΊΣ"}
+{"fn":"CityAbbreviation","args":["{name} has {count} items",false],"ok":"{NA"}
+{"fn":"CityAbbreviation","args":["a:b:c",true],"ok":""}
+{"fn":"CityAbbreviation","args":["hello world",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["a\uD83D\uDE00b\uD83D\uDE00c",true],"ok":""}
+{"fn":"CityAbbreviation","args":["line1\nline2",false],"ok":"LIN"}
+{"fn":"CityAbbreviation","args":["src/a/b.ts",false],"ok":"SRC"}
+{"fn":"CityAbbreviation","args":["İstanbul",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00Hello World",true],"ok":""}
+{"fn":"CityAbbreviation","args":["  padded  ",true],"ok":""}
+{"fn":"CityAbbreviation","args":[".leadingé",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["HELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":["abc",false],"ok":"ABC"}
+{"fn":"CityAbbreviation","args":["hello world",true],"ok":""}
+{"fn":"CityAbbreviation","args":["line1\nline2",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a.b.c",false],"ok":"A.B"}
+{"fn":"CityAbbreviation","args":["a.b.chello world",true],"ok":""}
+{"fn":"CityAbbreviation","args":["key_name-1hello world",true],"ok":""}
+{"fn":"CityAbbreviation","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix",false],"ok":"EMO"}
+{"fn":"CityAbbreviation","args":["a\uD83D\uDE00b\uD83D\uDE00c",false],"ok":"A\uD83D\uDE00"}
+{"fn":"CityAbbreviation","args":["trailing.line1\nline2",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a.b.c",true],"ok":""}
+{"fn":"CityAbbreviation","args":[":ns:key.path",false],"ok":":NS"}
+{"fn":"CityAbbreviation","args":["hello",true],"ok":""}
+{"fn":"CityAbbreviation","args":["trailing.",false],"ok":"TRA"}
+{"fn":"CityAbbreviation","args":["./x/**/*.json",true],"ok":""}
+{"fn":"CityAbbreviation","args":["  padded  ",false],"ok":"  P"}
+{"fn":"CityAbbreviation","args":["{name} has {count} items",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uFEFFbom",true],"ok":""}
+{"fn":"CityAbbreviation","args":[":",false],"ok":":"}
+{"fn":"CityAbbreviation","args":["src/a/b.ts",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a.b.ckey_name-1",true],"ok":""}
+{"fn":"CityAbbreviation","args":["é",true],"ok":""}
+{"fn":"CityAbbreviation","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix",true],"ok":""}
+{"fn":"CityAbbreviation","args":[":abc",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a:b:c",false],"ok":"A:B"}
+{"fn":"CityAbbreviation","args":["straßeΣΊΣΥΦΟΣ",false],"ok":"STR"}
+{"fn":"CityAbbreviation","args":["straßea",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a..b",false],"ok":"A.."}
+{"fn":"CityAbbreviation","args":["  padded  HELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":["./x/**/*.json",false],"ok":"./X"}
+{"fn":"CityAbbreviation","args":["",false],"ok":""}
+{"fn":"CityAbbreviation","args":["line1\nline2emoji \uD83D\uDC4D\uD83C\uDFFD mix",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣHELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":["src/a/b.ts\uFEFFbom",false],"ok":"SRC"}
+{"fn":"CityAbbreviation","args":["İstanbula:b:c",false],"ok":"İST"}
+{"fn":"CityAbbreviation","args":["Hello WorldHELLO",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["tab\tseparated",true],"ok":""}
+{"fn":"CityAbbreviation","args":["abcHello World",true],"ok":""}
+{"fn":"CityAbbreviation","args":["tab\tseparateda",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["trailing.",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ünïcödéa:b:c",false],"ok":"ÜNÏ"}
+{"fn":"CityAbbreviation","args":["ns:key.path",true],"ok":""}
+{"fn":"CityAbbreviation","args":[".leading日本語のテキスト",true],"ok":""}
+{"fn":"CityAbbreviation","args":[".leading",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a",true],"ok":""}
+{"fn":"CityAbbreviation","args":["abc",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["tab\tseparated",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣhello",false],"ok":"ΣΊΣ"}
+{"fn":"CityAbbreviation","args":["İstanbul./x/**/*.json",true],"ok":""}
+{"fn":"CityAbbreviation","args":["HELLO",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["key_name-1",true],"ok":""}
+{"fn":"CityAbbreviation","args":["straßekey_name-1",true],"ok":""}
+{"fn":"CityAbbreviation","args":["é{name} has {count} items",false],"ok":"É{"}
+{"fn":"CityAbbreviation","args":["",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a:b:ca.b.c",false],"ok":"A:B"}
+{"fn":"CityAbbreviation","args":["a.b.chello",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.path",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":["HELLOHELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":[":a",true],"ok":""}
+{"fn":"CityAbbreviation","args":["aab",false],"ok":"AAB"}
+{"fn":"CityAbbreviation","args":["abc./x/**/*.json",false],"ok":"ABC"}
+{"fn":"CityAbbreviation","args":["Hello World",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["é",false],"ok":"É"}
+{"fn":"CityAbbreviation","args":["日本語のテキスト",false],"ok":"日本語"}
+{"fn":"CityAbbreviation","args":[":emoji \uD83D\uDC4D\uD83C\uDFFD mix",false],"ok":":EM"}
+{"fn":"CityAbbreviation","args":["日本語のテキスト.leading",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a",false],"ok":"A"}
+{"fn":"CityAbbreviation","args":["ünïcödé",false],"ok":"ÜNÏ"}
+{"fn":"CityAbbreviation","args":[".leadingsrc/a/b.ts",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.pathHELLO",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":[":",true],"ok":""}
+{"fn":"CityAbbreviation","args":["straße",false],"ok":"STR"}
+{"fn":"CityAbbreviation","args":["key_name-1",false],"ok":"KEY"}
+{"fn":"CityAbbreviation","args":["tab\tseparatedemoji \uD83D\uDC4D\uD83C\uDFFD mix",true],"ok":""}
+{"fn":"CityAbbreviation","args":["Hello World",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a..b",true],"ok":""}
+{"fn":"CityAbbreviation","args":["straße",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.pathHello World",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":[".leading",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["a.b.cns:key.path",false],"ok":"A.B"}
+{"fn":"CityAbbreviation","args":["ünïcödé",true],"ok":""}
+{"fn":"CityAbbreviation","args":["./x/**/*.jsonΣΊΣΥΦΟΣ",false],"ok":"./X"}
+{"fn":"CityAbbreviation","args":["İstanbul",false],"ok":"İST"}
+{"fn":"CityAbbreviation","args":["straße./x/**/*.json",true],"ok":""}
+{"fn":"CityAbbreviation","args":[".leadingstraße",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["./x/**/*.jsonHello World",true],"ok":""}
+{"fn":"CityAbbreviation","args":["tab\tseparatedHello World",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":[".leadingkey_name-1",true],"ok":""}
+{"fn":"CityAbbreviation","args":["abΣΊΣΥΦΟΣ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mix.leading",false],"ok":"EMO"}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00.leading",false],"ok":"\uD83D\uDE00."}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00",false],"ok":"\uD83D\uDE00"}
+{"fn":"CityAbbreviation","args":["日本語のテキスト",true],"ok":""}
+{"fn":"CityAbbreviation","args":["İstanbulstraße",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ab",true],"ok":""}
+{"fn":"CityAbbreviation","args":["  padded    padded  ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.pathé",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":[".leading{name} has {count} items",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["İstanbultab\tseparated",false],"ok":"İST"}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣline1\nline2",false],"ok":"ΣΊΣ"}
+{"fn":"CityAbbreviation","args":["\uFEFFbom",false],"ok":"\uFEFFBO"}
+{"fn":"CityAbbreviation","args":["tab\tseparatedtab\tseparated",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["  padded  \uD83D\uDE00",false],"ok":"  P"}
+{"fn":"CityAbbreviation","args":["日本語のテキストHELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":["key_name-1a.b.c",false],"ok":"KEY"}
+{"fn":"CityAbbreviation","args":["tab\tseparatedtrailing.",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["Hello World.leading",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixHELLO",true],"ok":""}
+{"fn":"CityAbbreviation","args":["hello",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["hello world日本語のテキスト",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["straßea..b",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ab",false],"ok":"AB"}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00src/a/b.ts",true],"ok":""}
+{"fn":"CityAbbreviation","args":["trailing.a.b.c",false],"ok":"TRA"}
+{"fn":"CityAbbreviation","args":[":ns:key.path",true],"ok":""}
+{"fn":"CityAbbreviation","args":[".leading\uD83D\uDE00",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["日本語のテキスト./x/**/*.json",true],"ok":""}
+{"fn":"CityAbbreviation","args":["Hello Worldsrc/a/b.ts",true],"ok":""}
+{"fn":"CityAbbreviation","args":["hello\uFEFFbom",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ab\uD83D\uDE00",false],"ok":{"$utf16":[65,66,55357]}}
+{"fn":"CityAbbreviation","args":["key_name-1a\uD83D\uDE00b\uD83D\uDE00c",true],"ok":""}
+{"fn":"CityAbbreviation","args":["{name} has {count} itemshello world",true],"ok":""}
+{"fn":"CityAbbreviation","args":["éa",false],"ok":"ÉA"}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00HELLO",false],"ok":"\uD83D\uDE00H"}
+{"fn":"CityAbbreviation","args":["ns:key.pathhello world",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":[".leadingtrailing.",false],"ok":".LE"}
+{"fn":"CityAbbreviation","args":["hellotab\tseparated",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["abcΣΊΣΥΦΟΣ",false],"ok":"ABC"}
+{"fn":"CityAbbreviation","args":["tab\tseparatedhello",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["a./x/**/*.json",false],"ok":"A./"}
+{"fn":"CityAbbreviation","args":["a.b.ca",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣa\uD83D\uDE00b\uD83D\uDE00c",false],"ok":"ΣΊΣ"}
+{"fn":"CityAbbreviation","args":["ns:key.path:",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uFEFFbomHello World",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a..bé",true],"ok":""}
+{"fn":"CityAbbreviation","args":["line1\nline2hello",true],"ok":""}
+{"fn":"CityAbbreviation","args":["  padded  ΣΊΣΥΦΟΣ",false],"ok":"  P"}
+{"fn":"CityAbbreviation","args":["./x/**/*.json./x/**/*.json",false],"ok":"./X"}
+{"fn":"CityAbbreviation","args":["src/a/b.tsstraße",false],"ok":"SRC"}
+{"fn":"CityAbbreviation","args":["tab\tseparatedé",false],"ok":"TAB"}
+{"fn":"CityAbbreviation","args":["abctrailing.",true],"ok":""}
+{"fn":"CityAbbreviation","args":["emoji \uD83D\uDC4D\uD83C\uDFFD mixabc",true],"ok":""}
+{"fn":"CityAbbreviation","args":["{name} has {count} itemsΣΊΣΥΦΟΣ",false],"ok":"{NA"}
+{"fn":"CityAbbreviation","args":["\uFEFFboma.b.c",false],"ok":"\uFEFFBO"}
+{"fn":"CityAbbreviation","args":["line1\nline2  padded  ",false],"ok":"LIN"}
+{"fn":"CityAbbreviation","args":["İstanbula\uD83D\uDE00b\uD83D\uDE00c",false],"ok":"İST"}
+{"fn":"CityAbbreviation","args":["ns:key.pathΣΊΣΥΦΟΣ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a\uD83D\uDE00b\uD83D\uDE00cline1\nline2",false],"ok":"A\uD83D\uDE00"}
+{"fn":"CityAbbreviation","args":["straße日本語のテキスト",true],"ok":""}
+{"fn":"CityAbbreviation","args":["key_name-1\uD83D\uDE00",false],"ok":"KEY"}
+{"fn":"CityAbbreviation","args":["aHello World",false],"ok":"AHE"}
+{"fn":"CityAbbreviation","args":["./x/**/*.jsonhello world",true],"ok":""}
+{"fn":"CityAbbreviation","args":["HELLO:",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a..btrailing.",false],"ok":"A.."}
+{"fn":"CityAbbreviation","args":["./x/**/*.jsonns:key.path",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ünïcödéemoji \uD83D\uDC4D\uD83C\uDFFD mix",false],"ok":"ÜNÏ"}
+{"fn":"CityAbbreviation","args":["ns:key.path日本語のテキスト",true],"ok":""}
+{"fn":"CityAbbreviation","args":["src/a/b.ts\uD83D\uDE00",false],"ok":"SRC"}
+{"fn":"CityAbbreviation","args":["a:b:ca:b:c",false],"ok":"A:B"}
+{"fn":"CityAbbreviation","args":["astraße",false],"ok":"AST"}
+{"fn":"CityAbbreviation","args":[":ΣΊΣΥΦΟΣ",false],"ok":":ΣΊ"}
+{"fn":"CityAbbreviation","args":["abctab\tseparated",true],"ok":""}
+{"fn":"CityAbbreviation","args":["key_name-1日本語のテキスト",false],"ok":"KEY"}
+{"fn":"CityAbbreviation","args":["a.b.csrc/a/b.ts",true],"ok":""}
+{"fn":"CityAbbreviation","args":["{name} has {count} itemsabc",false],"ok":"{NA"}
+{"fn":"CityAbbreviation","args":["  padded  日本語のテキスト",false],"ok":"  P"}
+{"fn":"CityAbbreviation","args":["a:b:ca\uD83D\uDE00b\uD83D\uDE00c",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.pathstraße",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":["ΣΊΣΥΦΟΣns:key.path",false],"ok":"ΣΊΣ"}
+{"fn":"CityAbbreviation","args":["HELLO\uFEFFbom",true],"ok":""}
+{"fn":"CityAbbreviation","args":["hello worlda:b:c",true],"ok":""}
+{"fn":"CityAbbreviation","args":["日本語のテキストns:key.path",false],"ok":"日本語"}
+{"fn":"CityAbbreviation","args":["helloa",false],"ok":"HEL"}
+{"fn":"CityAbbreviation","args":["./x/**/*.jsoné",false],"ok":"./X"}
+{"fn":"CityAbbreviation","args":["abca..b",true],"ok":""}
+{"fn":"CityAbbreviation","args":["Hello World  padded  ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["straßeemoji \uD83D\uDC4D\uD83C\uDFFD mix",true],"ok":""}
+{"fn":"CityAbbreviation","args":["{name} has {count} itemsİstanbul",false],"ok":"{NA"}
+{"fn":"CityAbbreviation","args":["line1\nline2a",true],"ok":""}
+{"fn":"CityAbbreviation","args":["line1\nline2HELLO",false],"ok":"LIN"}
+{"fn":"CityAbbreviation","args":["\uFEFFbom日本語のテキスト",false],"ok":"\uFEFFBO"}
+{"fn":"CityAbbreviation","args":["abcstraße",true],"ok":""}
+{"fn":"CityAbbreviation","args":["./x/**/*.json\uD83D\uDE00",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ns:key.path\uFEFFbom",false],"ok":"NS:"}
+{"fn":"CityAbbreviation","args":["ünïcödé\uFEFFbom",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uD83D\uDE00ünïcödé",true],"ok":""}
+{"fn":"CityAbbreviation","args":["héllo wörld",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uD83D\uDC4D\uD83C\uDFFD thumbs",true],"ok":""}
+{"fn":"CityAbbreviation","args":["日本語",true],"ok":""}
+{"fn":"CityAbbreviation","args":["ılık ırmak",true],"ok":""}
+{"fn":"CityAbbreviation","args":["\uD83D\uDC68‍\uD83D\uDC69‍\uD83D\uDC67 family",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a\u00A0b",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a\uD83D\uDE00b",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a²b x½ y①",true],"ok":""}
+{"fn":"CityAbbreviation","args":["aⅠb Ⅻ",true],"ok":""}
+{"fn":"CityAbbreviation","args":["a\uD801\uDC00b \uD835\uDC00bc",true],"ok":""}
+{"fn":"CityAbbreviation","args":["कि ٣٤",true],"ok":""}
+{"fn":"FormatTimeZoneDiff","args":[100],"ok":"+01:40"}
+{"fn":"FormatTimeZoneDiff","args":[255],"ok":"+04:15"}
+{"fn":"FormatTimeZoneDiff","args":[1],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[-2147483648],"error":"Negating the minimum value of a twos complement number is invalid.","error_type":"System.OverflowException"}
+{"fn":"FormatTimeZoneDiff","args":[-100],"ok":"-01:40"}
+{"fn":"FormatTimeZoneDiff","args":[2147483647],"ok":"+02:07"}
+{"fn":"FormatTimeZoneDiff","args":[2],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[-1],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[0],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[7],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[42],"ok":"00:00"}
+{"fn":"FormatTimeZoneDiff","args":[-7],"ok":"00:00"}
+{"fn":"RelativeDayKey","args":[-1],"ok":"Clock_Yesterday"}
+{"fn":"RelativeDayKey","args":[-100],"ok":"Clock_Yesterday"}
+{"fn":"RelativeDayKey","args":[2],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[100],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[1],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[2147483647],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[42],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[7],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[-2147483648],"ok":"Clock_Yesterday"}
+{"fn":"RelativeDayKey","args":[0],"ok":"Clock_Today"}
+{"fn":"RelativeDayKey","args":[255],"ok":"Clock_Tomorrow"}
+{"fn":"RelativeDayKey","args":[-7],"ok":"Clock_Yesterday"}
+{"fn":"FormatDigitalTime","args":[7,-2147483648,255,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[2147483647,1,1,false,true],"ok":"07:01:01 AM"}
+{"fn":"FormatDigitalTime","args":[100,0,0,false,false],"ok":"04:00 AM"}
+{"fn":"FormatDigitalTime","args":[42,255,-100,true,false],"ok":"18:59"}
+{"fn":"FormatDigitalTime","args":[255,0,0,false,false],"ok":"03:00 PM"}
+{"fn":"FormatDigitalTime","args":[255,-1,2,true,true],"ok":"15:00:02"}
+{"fn":"FormatDigitalTime","args":[42,0,-100,false,false],"ok":"06:00 PM"}
+{"fn":"FormatDigitalTime","args":[2147483647,2147483647,7,false,true],"ok":"07:59:07 AM"}
+{"fn":"FormatDigitalTime","args":[42,2147483647,7,false,true],"ok":"06:59:07 PM"}
+{"fn":"FormatDigitalTime","args":[255,-100,2147483647,false,false],"ok":"03:00 PM"}
+{"fn":"FormatDigitalTime","args":[100,100,7,true,false],"ok":"04:59"}
+{"fn":"FormatDigitalTime","args":[0,-100,-1,true,false],"ok":"00:00"}
+{"fn":"FormatDigitalTime","args":[-1,100,2,true,false],"ok":"23:59"}
+{"fn":"FormatDigitalTime","args":[2,-1,-1,true,true],"ok":"02:00:00"}
+{"fn":"FormatDigitalTime","args":[1,-1,-100,false,false],"ok":"01:00 AM"}
+{"fn":"FormatDigitalTime","args":[255,-2147483648,7,true,false],"ok":"15:00"}
+{"fn":"FormatDigitalTime","args":[2147483647,7,-2147483648,true,false],"ok":"07:07"}
+{"fn":"FormatDigitalTime","args":[42,0,-100,true,false],"ok":"18:00"}
+{"fn":"FormatDigitalTime","args":[42,1,-100,true,false],"ok":"18:01"}
+{"fn":"FormatDigitalTime","args":[2,2147483647,0,false,false],"ok":"02:59 AM"}
+{"fn":"FormatDigitalTime","args":[-100,1,-1,true,false],"ok":"20:01"}
+{"fn":"FormatDigitalTime","args":[2147483647,-2147483648,0,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[1,7,-100,false,false],"ok":"01:07 AM"}
+{"fn":"FormatDigitalTime","args":[100,2147483647,-1,false,false],"ok":"04:59 AM"}
+{"fn":"FormatDigitalTime","args":[255,255,1,true,false],"ok":"15:59"}
+{"fn":"FormatDigitalTime","args":[255,-1,2147483647,true,true],"ok":"15:00:59"}
+{"fn":"FormatDigitalTime","args":[-1,255,100,true,false],"ok":"23:59"}
+{"fn":"FormatDigitalTime","args":[0,0,0,true,true],"ok":"00:00:00"}
+{"fn":"FormatDigitalTime","args":[-1,1,7,true,false],"ok":"23:01"}
+{"fn":"FormatDigitalTime","args":[-100,2147483647,100,true,true],"ok":"20:59:59"}
+{"fn":"FormatDigitalTime","args":[7,-100,2147483647,false,true],"ok":"07:00:59 AM"}
+{"fn":"FormatDigitalTime","args":[0,0,100,false,true],"ok":"12:00:59 AM"}
+{"fn":"FormatDigitalTime","args":[-100,255,1,true,true],"ok":"20:59:01"}
+{"fn":"FormatDigitalTime","args":[2,0,1,true,false],"ok":"02:00"}
+{"fn":"FormatDigitalTime","args":[42,7,42,false,false],"ok":"06:07 PM"}
+{"fn":"FormatDigitalTime","args":[2147483647,42,1,true,false],"ok":"07:42"}
+{"fn":"FormatDigitalTime","args":[-100,-100,100,true,true],"ok":"20:00:59"}
+{"fn":"FormatDigitalTime","args":[100,0,42,false,false],"ok":"04:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,0,-100,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[2,42,42,false,false],"ok":"02:42 AM"}
+{"fn":"FormatDigitalTime","args":[0,-1,-2147483648,false,true],"ok":"12:00:00 AM"}
+{"fn":"FormatDigitalTime","args":[2147483647,255,-1,true,true],"ok":"07:59:00"}
+{"fn":"FormatDigitalTime","args":[-100,255,42,true,false],"ok":"20:59"}
+{"fn":"FormatDigitalTime","args":[-2147483648,100,100,false,false],"ok":"04:59 PM"}
+{"fn":"FormatDigitalTime","args":[100,2,-100,true,false],"ok":"04:02"}
+{"fn":"FormatDigitalTime","args":[7,42,1,false,false],"ok":"07:42 AM"}
+{"fn":"FormatDigitalTime","args":[-1,2147483647,-1,false,true],"ok":"11:59:00 PM"}
+{"fn":"FormatDigitalTime","args":[0,2,255,true,true],"ok":"00:02:59"}
+{"fn":"FormatDigitalTime","args":[1,100,42,true,false],"ok":"01:59"}
+{"fn":"FormatDigitalTime","args":[2147483647,7,-100,false,true],"ok":"07:07:00 AM"}
+{"fn":"FormatDigitalTime","args":[42,42,100,false,true],"ok":"06:42:59 PM"}
+{"fn":"FormatDigitalTime","args":[-100,1,100,false,true],"ok":"08:01:59 PM"}
+{"fn":"FormatDigitalTime","args":[-100,-2147483648,-100,true,true],"ok":"20:00:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,2,-2147483648,false,true],"ok":"04:02:00 PM"}
+{"fn":"FormatDigitalTime","args":[-1,0,100,false,true],"ok":"11:00:59 PM"}
+{"fn":"FormatDigitalTime","args":[100,-2147483648,100,true,true],"ok":"04:00:59"}
+{"fn":"FormatDigitalTime","args":[255,42,-100,true,true],"ok":"15:42:00"}
+{"fn":"FormatDigitalTime","args":[2,100,1,true,false],"ok":"02:59"}
+{"fn":"FormatDigitalTime","args":[2147483647,0,2147483647,true,false],"ok":"07:00"}
+{"fn":"FormatDigitalTime","args":[-1,42,100,false,true],"ok":"11:42:59 PM"}
+{"fn":"FormatDigitalTime","args":[2147483647,2147483647,2147483647,false,false],"ok":"07:59 AM"}
+{"fn":"FormatDigitalTime","args":[0,-100,255,true,true],"ok":"00:00:59"}
+{"fn":"FormatDigitalTime","args":[-1,-1,-2147483648,true,false],"ok":"23:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,255,255,false,true],"ok":"04:59:59 PM"}
+{"fn":"FormatDigitalTime","args":[7,-2147483648,100,false,true],"ok":"07:00:59 AM"}
+{"fn":"FormatDigitalTime","args":[42,100,2,true,true],"ok":"18:59:02"}
+{"fn":"FormatDigitalTime","args":[1,2,255,true,false],"ok":"01:02"}
+{"fn":"FormatDigitalTime","args":[42,-1,7,false,false],"ok":"06:00 PM"}
+{"fn":"FormatDigitalTime","args":[2147483647,7,-1,true,false],"ok":"07:07"}
+{"fn":"FormatDigitalTime","args":[255,7,-2147483648,true,false],"ok":"15:07"}
+{"fn":"FormatDigitalTime","args":[-100,0,2147483647,false,true],"ok":"08:00:59 PM"}
+{"fn":"FormatDigitalTime","args":[0,0,42,false,true],"ok":"12:00:42 AM"}
+{"fn":"FormatDigitalTime","args":[0,7,2,false,false],"ok":"12:07 AM"}
+{"fn":"FormatDigitalTime","args":[2147483647,-2147483648,1,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[-2147483648,-1,7,true,false],"ok":"16:00"}
+{"fn":"FormatDigitalTime","args":[-100,2,7,true,true],"ok":"20:02:07"}
+{"fn":"FormatDigitalTime","args":[255,-2147483648,100,false,false],"ok":"03:00 PM"}
+{"fn":"FormatDigitalTime","args":[7,7,0,true,true],"ok":"07:07:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,1,-1,false,true],"ok":"04:01:00 PM"}
+{"fn":"FormatDigitalTime","args":[42,0,0,false,false],"ok":"06:00 PM"}
+{"fn":"FormatDigitalTime","args":[-2147483648,2147483647,0,true,false],"ok":"16:59"}
+{"fn":"FormatDigitalTime","args":[1,0,42,false,true],"ok":"01:00:42 AM"}
+{"fn":"FormatDigitalTime","args":[2,0,2147483647,true,false],"ok":"02:00"}
+{"fn":"FormatDigitalTime","args":[0,100,2147483647,true,false],"ok":"00:59"}
+{"fn":"FormatDigitalTime","args":[42,-2147483648,2147483647,false,false],"ok":"06:00 PM"}
+{"fn":"FormatDigitalTime","args":[-100,0,-2147483648,true,false],"ok":"20:00"}
+{"fn":"FormatDigitalTime","args":[2147483647,255,0,false,false],"ok":"07:59 AM"}
+{"fn":"FormatDigitalTime","args":[255,-1,1,true,false],"ok":"15:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,7,-100,false,false],"ok":"04:07 PM"}
+{"fn":"FormatDigitalTime","args":[2147483647,7,42,true,false],"ok":"07:07"}
+{"fn":"FormatDigitalTime","args":[255,100,-100,true,false],"ok":"15:59"}
+{"fn":"FormatDigitalTime","args":[100,2147483647,7,true,false],"ok":"04:59"}
+{"fn":"FormatDigitalTime","args":[2147483647,1,7,true,false],"ok":"07:01"}
+{"fn":"FormatDigitalTime","args":[-2147483648,-1,-1,false,true],"ok":"04:00:00 PM"}
+{"fn":"FormatDigitalTime","args":[42,2147483647,-1,false,false],"ok":"06:59 PM"}
+{"fn":"FormatDigitalTime","args":[-100,-1,2,false,true],"ok":"08:00:02 PM"}
+{"fn":"FormatDigitalTime","args":[7,0,100,true,false],"ok":"07:00"}
+{"fn":"FormatDigitalTime","args":[2,2147483647,7,true,false],"ok":"02:59"}
+{"fn":"FormatDigitalTime","args":[-100,-2147483648,255,false,true],"ok":"08:00:59 PM"}
+{"fn":"FormatDigitalTime","args":[-100,-2147483648,-1,false,true],"ok":"08:00:00 PM"}
+{"fn":"FormatDigitalTime","args":[100,100,-100,true,false],"ok":"04:59"}
+{"fn":"FormatDigitalTime","args":[2,255,2,true,true],"ok":"02:59:02"}
+{"fn":"FormatDigitalTime","args":[-2147483648,2,-100,false,true],"ok":"04:02:00 PM"}
+{"fn":"FormatDigitalTime","args":[-1,1,100,true,true],"ok":"23:01:59"}
+{"fn":"FormatDigitalTime","args":[-100,0,-1,true,true],"ok":"20:00:00"}
+{"fn":"FormatDigitalTime","args":[255,42,100,false,true],"ok":"03:42:59 PM"}
+{"fn":"FormatDigitalTime","args":[1,-1,42,true,true],"ok":"01:00:42"}
+{"fn":"FormatDigitalTime","args":[0,7,42,false,true],"ok":"12:07:42 AM"}
+{"fn":"FormatDigitalTime","args":[-2147483648,42,7,false,false],"ok":"04:42 PM"}
+{"fn":"FormatDigitalTime","args":[-1,2,7,true,false],"ok":"23:02"}
+{"fn":"FormatDigitalTime","args":[-2147483648,-1,-2147483648,false,false],"ok":"04:00 PM"}
+{"fn":"FormatDigitalTime","args":[0,255,-1,false,false],"ok":"12:59 AM"}
+{"fn":"FormatDigitalTime","args":[2,2,2147483647,true,false],"ok":"02:02"}
+{"fn":"FormatDigitalTime","args":[-100,2147483647,2,false,false],"ok":"08:59 PM"}
+{"fn":"FormatDigitalTime","args":[-2147483648,7,2,true,false],"ok":"16:07"}
+{"fn":"FormatDigitalTime","args":[-2147483648,2147483647,2147483647,false,false],"ok":"04:59 PM"}
+{"fn":"FormatDigitalTime","args":[255,1,2,false,false],"ok":"03:01 PM"}
+{"fn":"FormatDigitalTime","args":[2,42,-2147483648,true,true],"ok":"02:42:00"}
+{"fn":"FormatDigitalTime","args":[-1,1,1,true,false],"ok":"23:01"}
+{"fn":"FormatDigitalTime","args":[2147483647,1,42,true,false],"ok":"07:01"}
+{"fn":"FormatDigitalTime","args":[0,-2147483648,0,false,false],"ok":"12:00 AM"}
+{"fn":"FormatDigitalTime","args":[255,-100,42,true,true],"ok":"15:00:42"}
+{"fn":"FormatDigitalTime","args":[255,255,0,true,false],"ok":"15:59"}
+{"fn":"FormatDigitalTime","args":[42,-2147483648,-2147483648,true,false],"ok":"18:00"}
+{"fn":"FormatDigitalTime","args":[7,0,0,true,false],"ok":"07:00"}
+{"fn":"FormatDigitalTime","args":[0,1,2147483647,true,true],"ok":"00:01:59"}
+{"fn":"FormatDigitalTime","args":[1,255,0,true,false],"ok":"01:59"}
+{"fn":"FormatDigitalTime","args":[100,0,255,true,false],"ok":"04:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,-2147483648,1,false,true],"ok":"04:00:01 PM"}
+{"fn":"FormatDigitalTime","args":[0,-1,-2147483648,true,false],"ok":"00:00"}
+{"fn":"FormatDigitalTime","args":[2147483647,1,100,true,false],"ok":"07:01"}
+{"fn":"FormatDigitalTime","args":[255,2,255,true,false],"ok":"15:02"}
+{"fn":"FormatDigitalTime","args":[100,-2147483648,2147483647,false,true],"ok":"04:00:59 AM"}
+{"fn":"FormatDigitalTime","args":[42,-1,2,false,false],"ok":"06:00 PM"}
+{"fn":"FormatDigitalTime","args":[100,0,-100,true,false],"ok":"04:00"}
+{"fn":"FormatDigitalTime","args":[0,100,42,true,true],"ok":"00:59:42"}
+{"fn":"FormatDigitalTime","args":[-100,42,1,true,false],"ok":"20:42"}
+{"fn":"FormatDigitalTime","args":[-1,42,-1,true,true],"ok":"23:42:00"}
+{"fn":"FormatDigitalTime","args":[-2147483648,7,1,true,true],"ok":"16:07:01"}
+{"fn":"FormatDigitalTime","args":[100,7,-100,true,true],"ok":"04:07:00"}
+{"fn":"FormatDigitalTime","args":[-100,2147483647,-100,false,true],"ok":"08:59:00 PM"}
+{"fn":"FormatDigitalTime","args":[-2147483648,-2147483648,42,false,true],"ok":"04:00:42 PM"}
+{"fn":"FormatDigitalTime","args":[0,100,-2147483648,false,true],"ok":"12:59:00 AM"}
+{"fn":"FormatDigitalTime","args":[0,100,42,false,false],"ok":"12:59 AM"}
+{"fn":"FormatDigitalTime","args":[42,2147483647,0,true,true],"ok":"18:59:00"}
+{"fn":"FormatDigitalTime","args":[7,255,-2147483648,false,true],"ok":"07:59:00 AM"}
+{"fn":"FormatDigitalTime","args":[0,-1,-1,true,true],"ok":"00:00:00"}
+{"fn":"FormatDigitalTime","args":[2147483647,2147483647,100,false,true],"ok":"07:59:59 AM"}
+{"fn":"FormatDigitalTime","args":[100,255,-1,true,true],"ok":"04:59:00"}
+{"fn":"FormatDigitalTime","args":[-100,0,2,true,true],"ok":"20:00:02"}
+{"fn":"FormatDigitalTime","args":[2147483647,1,0,true,false],"ok":"07:01"}
+{"fn":"FormatDigitalTime","args":[-7,-2147483648,255,false,false],"ok":"05:00 PM"}
+{"fn":"FormatDigitalTime","args":[-1,-2147483648,255,false,false],"ok":"11:00 PM"}
+{"fn":"FormatDigitalTime","args":[0,-2147483648,255,false,false],"ok":"12:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,-7,255,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,-1,255,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,0,255,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,-2147483648,-7,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,-2147483648,-1,false,false],"ok":"07:00 AM"}
+{"fn":"FormatDigitalTime","args":[7,-2147483648,0,false,false],"ok":"07:00 AM"}

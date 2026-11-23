@@ -1,0 +1,125 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "NotesReminders/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "notes-reminders-rs",
+  "exports": [
+    {
+      "name": "RemindersLayoutTier",
+      "file": "NotesReminders/NotesRemindersLogic.cs",
+      "line": 5,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.NotesReminders.NotesRemindersLogic.RemindersLayoutTier(double width, double height)"
+    },
+    {
+      "name": "ShouldRemoveReminderOnEdit",
+      "file": "NotesReminders/NotesRemindersLogic.cs",
+      "line": 16,
+      "params": [
+        {
+          "name": "newText",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.NotesReminders.NotesRemindersLogic.ShouldRemoveReminderOnEdit(string newText)"
+    },
+    {
+      "name": "ShouldAddReminder",
+      "file": "NotesReminders/NotesRemindersLogic.cs",
+      "line": 21,
+      "params": [
+        {
+          "name": "inputText",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.NotesReminders.NotesRemindersLogic.ShouldAddReminder(string inputText)"
+    },
+    {
+      "name": "CountRemaining",
+      "file": "NotesReminders/NotesRemindersLogic.cs",
+      "line": 26,
+      "params": [
+        {
+          "name": "completedFlags",
+          "ts_type": "boolean[]",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool[]"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.NotesReminders.NotesRemindersLogic.CountRemaining(bool[] completedFlags)"
+    },
+    {
+      "name": "CountTotal",
+      "file": "NotesReminders/NotesRemindersLogic.cs",
+      "line": 39,
+      "params": [
+        {
+          "name": "completedFlags",
+          "ts_type": "boolean[]",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool[]"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.NotesReminders.NotesRemindersLogic.CountTotal(bool[] completedFlags)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}

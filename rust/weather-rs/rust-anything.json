@@ -1,0 +1,363 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "Weather/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "weather-rs",
+  "exports": [
+    {
+      "name": "WeatherIconName",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 8,
+      "params": [
+        {
+          "name": "weatherCode",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "isDay",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.WeatherIconName(int weatherCode, bool isDay)"
+    },
+    {
+      "name": "ForecastLayoutTier",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 30,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.ForecastLayoutTier(double width, double height)"
+    },
+    {
+      "name": "MetricDisplayValue",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 51,
+      "params": [
+        {
+          "name": "value",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.MetricDisplayValue(double value)"
+    },
+    {
+      "name": "MetricFontSize",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 56,
+      "params": [
+        {
+          "name": "value",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.MetricFontSize(double value)"
+    },
+    {
+      "name": "MetricStrokeDashOffset",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 67,
+      "params": [
+        {
+          "name": "min",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "max",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "value",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.MetricStrokeDashOffset(double min, double max, double value)"
+    },
+    {
+      "name": "DailyGraphWeights",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 78,
+      "params": [
+        {
+          "name": "dayMin",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "dayMax",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "globalMin",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "globalMax",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number[]",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double[]",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.DailyGraphWeights(double dayMin, double dayMax, double globalMin, double globalMax)"
+    },
+    {
+      "name": "MetricMargin",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 88,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.MetricMargin(double width, double height)"
+    },
+    {
+      "name": "NextSunEventKind",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 94,
+      "params": [
+        {
+          "name": "nowUnix",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "long"
+        },
+        {
+          "name": "todaySunriseUnix",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "long"
+        },
+        {
+          "name": "todaySunsetUnix",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "long"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.NextSunEventKind(long nowUnix, long todaySunriseUnix, long todaySunsetUnix)"
+    },
+    {
+      "name": "BuildForecastUrl",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 107,
+      "params": [
+        {
+          "name": "latitude",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "longitude",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "temperatureUnit",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.BuildForecastUrl(double latitude, double longitude, string temperatureUnit)"
+    },
+    {
+      "name": "BuildAirQualityUrl",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 114,
+      "params": [
+        {
+          "name": "latitude",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "longitude",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.BuildAirQualityUrl(double latitude, double longitude)"
+    },
+    {
+      "name": "BuildGeocodingUrl",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 121,
+      "params": [
+        {
+          "name": "cityName",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        },
+        {
+          "name": "twoLetterLang",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.BuildGeocodingUrl(string cityName, string twoLetterLang)"
+    },
+    {
+      "name": "FormatTemperature",
+      "file": "Weather/WeatherLogic.cs",
+      "line": 126,
+      "params": [
+        {
+          "name": "temp",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Weather.WeatherLogic.FormatTemperature(double temp)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}

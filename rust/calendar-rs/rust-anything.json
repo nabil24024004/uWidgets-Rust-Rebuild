@@ -1,0 +1,188 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "Calendar/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "calendar-rs",
+  "exports": [
+    {
+      "name": "DaysInMonth",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 7,
+      "params": [
+        {
+          "name": "year",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "month",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.DaysInMonth(int year, int month)"
+    },
+    {
+      "name": "EmptyDaysCount",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 16,
+      "params": [
+        {
+          "name": "firstOfMonthDayOfWeek",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "firstDayOfWeek",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.EmptyDaysCount(int firstOfMonthDayOfWeek, int firstDayOfWeek)"
+    },
+    {
+      "name": "IsWeekend",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 23,
+      "params": [
+        {
+          "name": "dayOfWeek",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.IsWeekend(int dayOfWeek)"
+    },
+    {
+      "name": "WeekdayOrder",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 29,
+      "params": [
+        {
+          "name": "firstDayOfWeek",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int[]",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int[]",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.WeekdayOrder(int firstDayOfWeek)"
+    },
+    {
+      "name": "MonthTextSize",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 40,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.MonthTextSize(double width, double height)"
+    },
+    {
+      "name": "MonthMarginLeft",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 45,
+      "params": [
+        {
+          "name": "width",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "height",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.MonthMarginLeft(double width, double height)"
+    },
+    {
+      "name": "StripTrailingDot",
+      "file": "Calendar/CalendarLogic.cs",
+      "line": 50,
+      "params": [
+        {
+          "name": "input",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false,
+          "native_type": "string"
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "string",
+      "prototype": "UWidgets.Oracle.Calendar.CalendarLogic.StripTrailingDot(string input)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}

@@ -1,0 +1,370 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "D:\\uWidgets in Rust\\reference-oracle",
+  "unit": "Core/",
+  "language": "csharp",
+  "kind": "ffi",
+  "crate_name": "core-rs",
+  "exports": [
+    {
+      "name": "GridGetSize",
+      "file": "Core/CoreLogic.cs",
+      "line": 7,
+      "params": [
+        {
+          "name": "units",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "size",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "margin",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "scaling",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "addMargin",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.GridGetSize(int units, int size, int margin, double scaling, bool addMargin)"
+    },
+    {
+      "name": "GridSnapDimension",
+      "file": "Core/CoreLogic.cs",
+      "line": 16,
+      "params": [
+        {
+          "name": "pixels",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "size",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "margin",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "scaling",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "addMargin",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        },
+        {
+          "name": "minValue",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.GridSnapDimension(double pixels, int size, int margin, double scaling, bool addMargin, int minValue)"
+    },
+    {
+      "name": "GridSnapSize",
+      "file": "Core/CoreLogic.cs",
+      "line": 27,
+      "params": [
+        {
+          "name": "pixels",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "size",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "margin",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.GridSnapSize(double pixels, int size, int margin)"
+    },
+    {
+      "name": "GridSnapPosition",
+      "file": "Core/CoreLogic.cs",
+      "line": 32,
+      "params": [
+        {
+          "name": "pixels",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        },
+        {
+          "name": "size",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "margin",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "scaling",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.GridSnapPosition(double pixels, int size, int margin, double scaling)"
+    },
+    {
+      "name": "ContentScale",
+      "file": "Core/CoreLogic.cs",
+      "line": 37,
+      "params": [
+        {
+          "name": "dimensionSize",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.ContentScale(int dimensionSize)"
+    },
+    {
+      "name": "GalleryDefaultDimension",
+      "file": "Core/CoreLogic.cs",
+      "line": 42,
+      "params": [
+        {
+          "name": "size",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        },
+        {
+          "name": "margin",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.GalleryDefaultDimension(int size, int margin)"
+    },
+    {
+      "name": "PresetColumns",
+      "file": "Core/CoreLogic.cs",
+      "line": 47,
+      "params": [
+        {
+          "name": "presetIndex",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.PresetColumns(int presetIndex)"
+    },
+    {
+      "name": "PresetRows",
+      "file": "Core/CoreLogic.cs",
+      "line": 59,
+      "params": [
+        {
+          "name": "presetIndex",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false,
+          "native_type": "int"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.PresetRows(int presetIndex)"
+    },
+    {
+      "name": "ThemeTextOpacity",
+      "file": "Core/CoreLogic.cs",
+      "line": 71,
+      "params": [
+        {
+          "name": "opacityLevel",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "number",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "double",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.ThemeTextOpacity(double opacityLevel)"
+    },
+    {
+      "name": "ThemeUsesAcrylic",
+      "file": "Core/CoreLogic.cs",
+      "line": 76,
+      "params": [
+        {
+          "name": "opacityLevel",
+          "ts_type": "number",
+          "optional": false,
+          "rest": false,
+          "native_type": "double"
+        }
+      ],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "bool",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.ThemeUsesAcrylic(double opacityLevel)"
+    },
+    {
+      "name": "ThemePreviewRadius",
+      "file": "Core/CoreLogic.cs",
+      "line": 81,
+      "params": [
+        {
+          "name": "useNativeFrame",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.ThemePreviewRadius(bool useNativeFrame)"
+    },
+    {
+      "name": "ThemePreviewBorder",
+      "file": "Core/CoreLogic.cs",
+      "line": 86,
+      "params": [
+        {
+          "name": "useNativeFrame",
+          "ts_type": "boolean",
+          "optional": false,
+          "rest": false,
+          "native_type": "bool"
+        }
+      ],
+      "returns": "int",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "int",
+      "prototype": "UWidgets.Oracle.Core.CoreLogic.ThemePreviewBorder(bool useNativeFrame)"
+    }
+  ],
+  "classes": [],
+  "js_only": [],
+  "float_tolerance": 1e-9
+}
